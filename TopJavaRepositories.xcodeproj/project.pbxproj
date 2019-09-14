@@ -25,6 +25,18 @@
 		1DAC1235232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */; };
 		1DAC1237232D430400F109E1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1236232D430400F109E1 /* Logger.swift */; };
 		1DAC123B232D4F5100F109E1 /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC123A232D4F5100F109E1 /* UILabel + Extensions.swift */; };
+		1DAC1246232D50DB00F109E1 /* PullRequestRepoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC123F232D50DB00F109E1 /* PullRequestRepoPresenter.swift */; };
+		1DAC1247232D50DB00F109E1 /* PullRequestRepoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1240232D50DB00F109E1 /* PullRequestRepoWorker.swift */; };
+		1DAC1248232D50DB00F109E1 /* PullRequestRepoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1241232D50DB00F109E1 /* PullRequestRepoRouter.swift */; };
+		1DAC1249232D50DB00F109E1 /* PullRequestRepoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1242232D50DB00F109E1 /* PullRequestRepoModels.swift */; };
+		1DAC124A232D50DB00F109E1 /* PullRequestRepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1243232D50DB00F109E1 /* PullRequestRepoViewController.swift */; };
+		1DAC124B232D50DB00F109E1 /* PullRequestRepoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1244232D50DB00F109E1 /* PullRequestRepoInteractor.swift */; };
+		1DAC124C232D50DB00F109E1 /* PullRequestRepoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1245232D50DB00F109E1 /* PullRequestRepoViewController.xib */; };
+		1DAC124E232D511E00F109E1 /* PullRequestRepoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC124D232D511E00F109E1 /* PullRequestRepoProvider.swift */; };
+		1DAC1253232D513700F109E1 /* PullRequestRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1251232D513700F109E1 /* PullRequestRepoCell.swift */; };
+		1DAC1254232D513700F109E1 /* PullRequestRepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1252232D513700F109E1 /* PullRequestRepoCell.xib */; };
+		1DAC1256232D570D00F109E1 /* PullRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1255232D570D00F109E1 /* PullRequests.swift */; };
+		1DAC1258232D676000F109E1 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1257232D676000F109E1 /* UITableView+Extensions.swift */; };
 		1DDDF6E6232D2F5100844D17 /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */; };
 		1DDDF6E8232D2F5100844D17 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */; };
 		1DDDF6EA232D2F5100844D17 /* TopRatedJavaRepositories.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */; };
@@ -74,6 +86,18 @@
 		1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopJavaRepositoriesProvider.swift; sourceTree = "<group>"; };
 		1DAC1236232D430400F109E1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		1DAC123A232D4F5100F109E1 /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
+		1DAC123F232D50DB00F109E1 /* PullRequestRepoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoPresenter.swift; sourceTree = "<group>"; };
+		1DAC1240232D50DB00F109E1 /* PullRequestRepoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoWorker.swift; sourceTree = "<group>"; };
+		1DAC1241232D50DB00F109E1 /* PullRequestRepoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoRouter.swift; sourceTree = "<group>"; };
+		1DAC1242232D50DB00F109E1 /* PullRequestRepoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoModels.swift; sourceTree = "<group>"; };
+		1DAC1243232D50DB00F109E1 /* PullRequestRepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoViewController.swift; sourceTree = "<group>"; };
+		1DAC1244232D50DB00F109E1 /* PullRequestRepoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoInteractor.swift; sourceTree = "<group>"; };
+		1DAC1245232D50DB00F109E1 /* PullRequestRepoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestRepoViewController.xib; sourceTree = "<group>"; };
+		1DAC124D232D511E00F109E1 /* PullRequestRepoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoProvider.swift; sourceTree = "<group>"; };
+		1DAC1251232D513700F109E1 /* PullRequestRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoCell.swift; sourceTree = "<group>"; };
+		1DAC1252232D513700F109E1 /* PullRequestRepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestRepoCell.xib; sourceTree = "<group>"; };
+		1DAC1255232D570D00F109E1 /* PullRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequests.swift; sourceTree = "<group>"; };
+		1DAC1257232D676000F109E1 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
 		1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
 		1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TopRatedJavaRepositories.strings; sourceTree = "<group>"; };
@@ -190,8 +214,42 @@
 			isa = PBXGroup;
 			children = (
 				1DAC123A232D4F5100F109E1 /* UILabel + Extensions.swift */,
+				1DAC1257232D676000F109E1 /* UITableView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1DAC123C232D50B000F109E1 /* Pull Requests */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC123E232D50BF00F109E1 /* Provider */,
+				1DAC123D232D50BB00F109E1 /* Views */,
+				1DAC1240232D50DB00F109E1 /* PullRequestRepoWorker.swift */,
+				1DAC1241232D50DB00F109E1 /* PullRequestRepoRouter.swift */,
+				1DAC1242232D50DB00F109E1 /* PullRequestRepoModels.swift */,
+				1DAC1244232D50DB00F109E1 /* PullRequestRepoInteractor.swift */,
+				1DAC123F232D50DB00F109E1 /* PullRequestRepoPresenter.swift */,
+				1DAC1243232D50DB00F109E1 /* PullRequestRepoViewController.swift */,
+				1DAC1245232D50DB00F109E1 /* PullRequestRepoViewController.xib */,
+			);
+			path = "Pull Requests";
+			sourceTree = "<group>";
+		};
+		1DAC123D232D50BB00F109E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC1251232D513700F109E1 /* PullRequestRepoCell.swift */,
+				1DAC1252232D513700F109E1 /* PullRequestRepoCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1DAC123E232D50BF00F109E1 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC124D232D511E00F109E1 /* PullRequestRepoProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		1DDDF6D2232D2F5100844D17 /* Common */ = {
@@ -243,6 +301,7 @@
 				1DDDF6E1232D2F5100844D17 /* Repositories.swift */,
 				1DDDF6E2232D2F5100844D17 /* Repository.swift */,
 				1DDDF6E3232D2F5100844D17 /* Owner.swift */,
+				1DAC1255232D570D00F109E1 /* PullRequests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -271,6 +330,7 @@
 		1DDDF6F9232D2FA700844D17 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1DAC123C232D50B000F109E1 /* Pull Requests */,
 				1DAC121D232D353400F109E1 /* List */,
 			);
 			path = Modules;
@@ -385,7 +445,9 @@
 			files = (
 				1DAC1204232D2E6400F109E1 /* LaunchScreen.storyboard in Resources */,
 				1DAC1230232D37BF00F109E1 /* ListRepositoriesCell.xib in Resources */,
+				1DAC124C232D50DB00F109E1 /* PullRequestRepoViewController.xib in Resources */,
 				1DAC1201232D2E6400F109E1 /* Assets.xcassets in Resources */,
+				1DAC1254232D513700F109E1 /* PullRequestRepoCell.xib in Resources */,
 				1DAC1232232D384800F109E1 /* Colors.xcassets in Resources */,
 				1DDDF6EA232D2F5100844D17 /* TopRatedJavaRepositories.strings in Resources */,
 				1DAC122B232D355C00F109E1 /* ListRepositoriesViewController.xib in Resources */,
@@ -532,22 +594,32 @@
 				1DAC1227232D355C00F109E1 /* ListRepositoriesRouter.swift in Sources */,
 				1DAC122F232D37BF00F109E1 /* ListRepositoriesCell.swift in Sources */,
 				1DDDF6E8232D2F5100844D17 /* CommonTypes.swift in Sources */,
+				1DAC1246232D50DB00F109E1 /* PullRequestRepoPresenter.swift in Sources */,
+				1DAC1256232D570D00F109E1 /* PullRequests.swift in Sources */,
 				1DDDF6EF232D2F5100844D17 /* URLRequestProtocol.swift in Sources */,
+				1DAC124E232D511E00F109E1 /* PullRequestRepoProvider.swift in Sources */,
 				1DDDF6EB232D2F5100844D17 /* Font.swift in Sources */,
 				1DDDF6F1232D2F5100844D17 /* Repository.swift in Sources */,
 				1DDDF6EE232D2F5100844D17 /* ServiceError.swift in Sources */,
 				1DDDF6F0232D2F5100844D17 /* Repositories.swift in Sources */,
+				1DAC1247232D50DB00F109E1 /* PullRequestRepoWorker.swift in Sources */,
 				1DDDF6F6232D2F7C00844D17 /* ENV.swift in Sources */,
+				1DAC124B232D50DB00F109E1 /* PullRequestRepoInteractor.swift in Sources */,
 				1DAC121C232D317900F109E1 /* R.generated.swift in Sources */,
 				1DAC11F7232D2E6400F109E1 /* AppDelegate.swift in Sources */,
+				1DAC1258232D676000F109E1 /* UITableView+Extensions.swift in Sources */,
 				1DDDF6F2232D2F5100844D17 /* Owner.swift in Sources */,
+				1DAC1249232D50DB00F109E1 /* PullRequestRepoModels.swift in Sources */,
 				1DAC1229232D355C00F109E1 /* ListRepositoriesViewController.swift in Sources */,
 				1DAC122A232D355C00F109E1 /* ListRepositoriesInteractor.swift in Sources */,
 				1DAC1235232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift in Sources */,
+				1DAC1248232D50DB00F109E1 /* PullRequestRepoRouter.swift in Sources */,
 				1DDDF6F3232D2F5100844D17 /* ViewControllerBaseProtocol.swift in Sources */,
 				1DAC1226232D355C00F109E1 /* ListRepositoriesWorker.swift in Sources */,
 				1DAC1225232D355C00F109E1 /* ListRepositoriesPresenter.swift in Sources */,
 				1DAC123B232D4F5100F109E1 /* UILabel + Extensions.swift in Sources */,
+				1DAC124A232D50DB00F109E1 /* PullRequestRepoViewController.swift in Sources */,
+				1DAC1253232D513700F109E1 /* PullRequestRepoCell.swift in Sources */,
 				1DDDF6ED232D2F5100844D17 /* NetworkProvider.swift in Sources */,
 				1DAC1228232D355C00F109E1 /* ListRepositoriesModels.swift in Sources */,
 			);

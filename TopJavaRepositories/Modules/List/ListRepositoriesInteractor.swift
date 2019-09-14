@@ -19,10 +19,12 @@ protocol ListRepositoriesBusinessLogic {
     func numbeOfRows() -> Int
     func viewModelForIndex(index: Int) -> ListRepositories.ViewModel?
     func loadNextPageIfNeeded(for index: Int)
+    func didSelectRow(index: Int)
 }
 
 protocol ListRepositoriesDataStore {
-    var currentPage: Int { get set }
+    var owner: String? {get set}
+    var name: String? {get set}
 }
 
 class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositoriesDataStore {
@@ -33,6 +35,9 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
     var items: [Repository] = []
     var currentPage: Int = 1
     var pageSize: Int = 30
+    
+    var owner: String?
+    var name: String?
     
     init(worker: ListRepositoriesWorker = ListRepositoriesWorker()) {
         self.worker = worker
@@ -74,5 +79,12 @@ class ListRepositoriesInteractor: ListRepositoriesBusinessLogic, ListRepositorie
         }
         currentPage += 1
         fetchRepositories()
+    }
+    
+    func didSelectRow(index: Int) {
+        guard index < items.count else { return }
+        owner = items[index].owner.login
+        name = items[index].name
+        presenter?.presentRepositoryPullRequests()
     }
 }

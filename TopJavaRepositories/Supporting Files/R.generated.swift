@@ -69,12 +69,16 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  /// This `R.nib` struct is generated, and contains static references to 4 nibs.
   struct nib {
     /// Nib `ListRepositoriesCell`.
     static let listRepositoriesCell = _R.nib._ListRepositoriesCell()
     /// Nib `ListRepositoriesViewController`.
     static let listRepositoriesViewController = _R.nib._ListRepositoriesViewController()
+    /// Nib `PullRequestRepoCell`.
+    static let pullRequestRepoCell = _R.nib._PullRequestRepoCell()
+    /// Nib `PullRequestRepoViewController`.
+    static let pullRequestRepoViewController = _R.nib._PullRequestRepoViewController()
     
     /// `UINib(name: "ListRepositoriesCell", in: bundle)`
     @available(*, deprecated, message: "Use UINib(resource: R.nib.listRepositoriesCell) instead")
@@ -88,12 +92,32 @@ struct R: Rswift.Validatable {
       return UIKit.UINib(resource: R.nib.listRepositoriesViewController)
     }
     
+    /// `UINib(name: "PullRequestRepoCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.pullRequestRepoCell) instead")
+    static func pullRequestRepoCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.pullRequestRepoCell)
+    }
+    
+    /// `UINib(name: "PullRequestRepoViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.pullRequestRepoViewController) instead")
+    static func pullRequestRepoViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.pullRequestRepoViewController)
+    }
+    
     static func listRepositoriesCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListRepositoriesCell? {
       return R.nib.listRepositoriesCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListRepositoriesCell
     }
     
     static func listRepositoriesViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
       return R.nib.listRepositoriesViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+    
+    static func pullRequestRepoCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PullRequestRepoCell? {
+      return R.nib.pullRequestRepoCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PullRequestRepoCell
+    }
+    
+    static func pullRequestRepoViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.pullRequestRepoViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
     }
     
     fileprivate init() {}
@@ -198,6 +222,28 @@ struct _R: Rswift.Validatable {
     struct _ListRepositoriesViewController: Rswift.NibResourceType {
       let bundle = R.hostingBundle
       let name = "ListRepositoriesViewController"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _PullRequestRepoCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "PullRequestRepoCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PullRequestRepoCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PullRequestRepoCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _PullRequestRepoViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "PullRequestRepoViewController"
       
       func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
         return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView

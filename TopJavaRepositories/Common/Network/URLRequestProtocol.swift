@@ -20,13 +20,12 @@ public enum HTTPMethod: String {
 
 protocol URLRequestProtocol {
     var baseURL: URL { get }
-    var path: String { get }
     var httpMethod: HTTPMethod { get }
     func headers() -> [String: String]
     func urlParameters() -> [URLQueryItem]
     func bodyParameters() -> [String: Any]
     var timeOut: TimeInterval { get }
-    
+    func path() -> String
     func asURLRequest() -> URLRequest
 }
 
@@ -51,7 +50,7 @@ extension URLRequestProtocol {
     // MARK: - Instance Methods
     
     public func asURLRequest() -> URLRequest {
-        let fullURL = baseURL.appendingPathComponent(path)
+        let fullURL = baseURL.appendingPathComponent(path())
         
         var urlComponents = URLComponents(url: fullURL, resolvingAgainstBaseURL: false)
         urlComponents?.queryItems = urlParameters()

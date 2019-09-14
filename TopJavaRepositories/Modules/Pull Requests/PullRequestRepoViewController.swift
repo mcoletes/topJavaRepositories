@@ -1,5 +1,5 @@
 //
-//  ListRepositoriesViewController.swift
+//  PullRequestRepoViewController.swift
 //  TopJavaRepositories
 //
 //  Created by Mauro Sasso Coletes on 14/09/19.
@@ -12,20 +12,22 @@
 
 import UIKit
 
-protocol ListRepositoriesDisplayLogic: class, ViewControllerBaseProtocol {
-    func reloaTable()
-    func showRepositoryPullRequests()
+protocol PullRequestRepoDisplayLogic: class, ViewControllerBaseProtocol {
+    func reloadTable()
+    func showLoading()
+    func hideLoading()
+    func showTitle(title: String)
 }
 
-class ListRepositoriesViewController: UIViewController {
+class PullRequestRepoViewController: UIViewController {
 
-    var interactor: ListRepositoriesBusinessLogic?
-    var router: (ListRepositoriesRoutingLogic & ListRepositoriesDataPassing)?
+    var interactor: PullRequestRepoBusinessLogic?
+    var router: (PullRequestRepoRoutingLogic & PullRequestRepoDataPassing)?
 
     @IBOutlet weak var tableView: UITableView!
     
     init() {
-        super.init(nibName: "ListRepositoriesViewController", bundle: Bundle.main)
+        super.init(nibName: "PullRequestRepoViewController", bundle: Bundle.main)
         setup()
     }
 
@@ -41,31 +43,25 @@ class ListRepositoriesViewController: UIViewController {
 
     private func setup() {
         let viewController = self
-        let interactor = ListRepositoriesInteractor()
-        let presenter = ListRepositoriesPresenter()
-        let router = ListRepositoriesRouter()
+        let interactor = PullRequestRepoInteractor()
+        let presenter = PullRequestRepoPresenter()
+        let router = PullRequestRepoRouter()
         viewController.interactor = interactor
         viewController.router = router
         presenter.viewController = viewController
         interactor.presenter = presenter
         router.viewController = viewController
         router.dataStore = interactor
-        
-        self.title = R.string.topRatedJavaRepositories.topRepositoriesTitle()
     }
-    
-    // MARK: View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        interactor?.getTitle()
         configureTableView()
-        interactor?.fetchRepositories()
-
+        interactor?.getPullrequests()
     }
     
     private func configureTableView() {
-        tableView.addSpinnerToFooterView()
-        tableView.prefetchDataSource = self
         tableView.dataSource = self
         tableView.delegate = self
         tableView.estimatedRowHeight = 60
@@ -73,9 +69,9 @@ class ListRepositoriesViewController: UIViewController {
     }
 }
 
-extension ListRepositoriesViewController: UITableViewDataSource, UITableViewDelegate {
-
-    func numberOfSections(in tableView: UITableView) -> Int {
+extension PullRequestRepoViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func PullRequestRepoViewController(in tableView: UITableView) -> Int {
         return 1
     }
     
@@ -84,34 +80,33 @@ extension ListRepositoriesViewController: UITableViewDataSource, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: ListRepositoriesCell = tableView.dequeueReusableCell(for: indexPath)
+        let cell: PullRequestRepoCell = tableView.dequeueReusableCell(for: indexPath)
         if let item = interactor?.viewModelForIndex(index: indexPath.row) {
-            cell.configure(name: item.name, repoDescription: item.description, pullRequests: "\(item.forks)", stars: "\(item.stars)", repoImage: item.ownerPhotoURL, username: item.ownerName) 
+            cell.configure(name: item.title, pullDescription: item.body, repoImage: item.ownerPhotoURL, username: item.ownerName)
             return cell
         }
         return UITableViewCell()
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        interactor?.didSelectRow(index: indexPath.row)
-    }
 }
 
-extension ListRepositoriesViewController: ListRepositoriesDisplayLogic {
-    func reloaTable() {
+extension PullRequestRepoViewController: PullRequestRepoDisplayLogic {
+    func reloadTable() {
         DispatchQueue.main.async {
             self.tableView.reloadData()
         }
     }
-    func showRepositoryPullRequests() {
-        router?.routeToRepoPullRequests()
-    }
-}
-
-extension ListRepositoriesViewController: UITableViewDataSourcePrefetching {
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        for indexPath in indexPaths {
-            interactor?.loadNextPageIfNeeded(for: indexPath.row)
+    
+    func showLoading() {
+        DispatchQueue.main.async {
+            self.tableView.addSpinnerToFooterView()
         }
+    }
+    func hideLoading() {
+        DispatchQueue.main.async {
+            self.tableView.tableFooterView = nil
+        }
+    }
+    func showTitle(title: String) {
+        self.title = title
     }
 }

@@ -13,6 +13,7 @@
 import UIKit
 
 @objc protocol ListRepositoriesRoutingLogic {
+    func routeToRepoPullRequests()
 }
 
 protocol ListRepositoriesDataPassing {
@@ -24,30 +25,16 @@ class ListRepositoriesRouter: ListRepositoriesRoutingLogic, ListRepositoriesData
     weak var viewController: ListRepositoriesViewController?
     var dataStore: ListRepositoriesDataStore?
 
-    //func routeToSomewhere(segue: UIStoryboardSegue?) {
-    //  if let segue = segue {
-    //      let destinationVC = segue.destination as! SomewhereViewController
-    //      var destinationDS = destinationVC.router!.dataStore!
-    //      passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-    //  } else {
-    //      let storyboard = UIStoryboard(name: "Main", bundle: nil)
-    //      let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-    //      var destinationDS = destinationVC.router!.dataStore!
-    //      passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-    //      navigateToSomewhere(source: viewController!, destination: destinationVC)
-    //  }
-    //}
-
-    // MARK: Navigation
-
-    //func navigateToSomewhere(source: ListRepositoriesViewController, destination: SomewhereViewController) {
-    //  source.show(destination, sender: nil)
-    //}
-
-    // MARK: Passing data
-
-    //func passDataToSomewhere(source: ListRepositoriesDataStore, destination: inout SomewhereDataStore) {
-    //  destination.name = source.name
-    //}
-
+    func routeToRepoPullRequests() {
+        let vc = PullRequestRepoViewController()
+        var destinationDS = vc.router!.dataStore!
+        passDataToPullRequest(source: dataStore!, destination: &destinationDS)
+        self.viewController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        viewController?.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func passDataToPullRequest(source: ListRepositoriesDataStore, destination: inout PullRequestRepoDataStore) {
+        destination.owner = source.owner
+        destination.name = source.name
+    }
 }

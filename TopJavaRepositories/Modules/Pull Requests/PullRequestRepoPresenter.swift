@@ -1,5 +1,5 @@
 //
-//  ListRepositoriesPresenter.swift
+//  PullRequestRepoPresenter.swift
 //  TopJavaRepositories
 //
 //  Created by Mauro Sasso Coletes on 14/09/19.
@@ -14,21 +14,19 @@
 
 import UIKit
 
-protocol ListRepositoriesPresentationLogic {
-    func reloadTable()
+protocol PullRequestRepoPresentationLogic {
     func displayError(type: ListRepositories.errors, tryAgainAction: EmptyClosure?)
-    func presentViewModelFromModel(repository: Repository) -> ListRepositories.ViewModel?
-    func presentRepositoryPullRequests()
+    func reloadTable()
+    func presentLoading()
+    func hideLoading()
+    func presentViewModelFromModel(pullRequest: PullRequest) -> PullRequestRepo.ViewModel?
+    func presentTitle(title: String)
 }
 
-class ListRepositoriesPresenter: ListRepositoriesPresentationLogic {
+class PullRequestRepoPresenter: PullRequestRepoPresentationLogic {
     
-    weak var viewController: ListRepositoriesDisplayLogic?
+    weak var viewController: PullRequestRepoDisplayLogic?
 
-    func reloadTable() {
-        viewController?.reloaTable()
-    }
-    
     func displayError(type: ListRepositories.errors, tryAgainAction: EmptyClosure?) {
         switch type {
         case .noInternet:
@@ -37,15 +35,27 @@ class ListRepositoriesPresenter: ListRepositoriesPresentationLogic {
             viewController?.displayError(message: R.string.topRatedJavaRepositories.tryAgainMessage(), actionButtonTitle: R.string.topRatedJavaRepositories.tryAgainActionTitle(), tryAgainAction: tryAgainAction)
         }
     }
+    func reloadTable() {
+        viewController?.reloadTable()
+    }
     
-    func presentViewModelFromModel(repository: Repository) -> ListRepositories.ViewModel? {
-        guard let url = URL(string: repository.owner.avatarUrl) else {
+    func presentViewModelFromModel(pullRequest: PullRequest) -> PullRequestRepo.ViewModel? {
+        guard let url = URL(string: pullRequest.user.avatarURL) else {
             return nil
         }
-        return ListRepositories.ViewModel(name: repository.name, stars: repository.stargazersCount, ownerName: repository.owner.login, ownerPhotoURL: url, forks: repository.forks, description: repository.description)
+        return PullRequestRepo.ViewModel(title: pullRequest.title, body: pullRequest.body, ownerName: pullRequest.user.login, ownerPhotoURL: url)
     }
     
-    func presentRepositoryPullRequests() {
-        viewController?.showRepositoryPullRequests()
+    func presentLoading() {
+        viewController?.showLoading()
     }
+    
+    func hideLoading() {
+        viewController?.hideLoading()
+    }
+    
+    func presentTitle(title: String) {
+        viewController?.showTitle(title: title)
+    }
+
 }
