@@ -8,18 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		1DAC11F7232D2E6400F109E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */; };
-		1DAC11F9232D2E6400F109E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC11F8232D2E6400F109E1 /* ViewController.swift */; };
-		1DAC11FC232D2E6400F109E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC11FA232D2E6400F109E1 /* Main.storyboard */; };
 		1DAC1201232D2E6400F109E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1200232D2E6400F109E1 /* Assets.xcassets */; };
 		1DAC1204232D2E6400F109E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1202232D2E6400F109E1 /* LaunchScreen.storyboard */; };
 		1DAC120F232D2E6400F109E1 /* TopJavaRepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC120E232D2E6400F109E1 /* TopJavaRepositoriesTests.swift */; };
 		1DAC121C232D317900F109E1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC121B232D317900F109E1 /* R.generated.swift */; };
+		1DAC1225232D355C00F109E1 /* ListRepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC121E232D355C00F109E1 /* ListRepositoriesPresenter.swift */; };
+		1DAC1226232D355C00F109E1 /* ListRepositoriesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC121F232D355C00F109E1 /* ListRepositoriesWorker.swift */; };
+		1DAC1227232D355C00F109E1 /* ListRepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1220232D355C00F109E1 /* ListRepositoriesRouter.swift */; };
+		1DAC1228232D355C00F109E1 /* ListRepositoriesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1221232D355C00F109E1 /* ListRepositoriesModels.swift */; };
+		1DAC1229232D355C00F109E1 /* ListRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1222232D355C00F109E1 /* ListRepositoriesViewController.swift */; };
+		1DAC122A232D355C00F109E1 /* ListRepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1223232D355C00F109E1 /* ListRepositoriesInteractor.swift */; };
+		1DAC122B232D355C00F109E1 /* ListRepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1224232D355C00F109E1 /* ListRepositoriesViewController.xib */; };
+		1DAC122F232D37BF00F109E1 /* ListRepositoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC122D232D37BF00F109E1 /* ListRepositoriesCell.swift */; };
+		1DAC1230232D37BF00F109E1 /* ListRepositoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC122E232D37BF00F109E1 /* ListRepositoriesCell.xib */; };
+		1DAC1232232D384800F109E1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1231232D384800F109E1 /* Colors.xcassets */; };
+		1DAC1235232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */; };
 		1DDDF6E6232D2F5100844D17 /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */; };
 		1DDDF6E8232D2F5100844D17 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */; };
-		1DDDF6E9232D2F5100844D17 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D8232D2F5100844D17 /* Constraints.swift */; };
 		1DDDF6EA232D2F5100844D17 /* TopRatedJavaRepositories.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */; };
 		1DDDF6EB232D2F5100844D17 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DA232D2F5100844D17 /* Font.swift */; };
-		1DDDF6EC232D2F5100844D17 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DB232D2F5100844D17 /* Colors.swift */; };
 		1DDDF6ED232D2F5100844D17 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DD232D2F5100844D17 /* NetworkProvider.swift */; };
 		1DDDF6EE232D2F5100844D17 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DE232D2F5100844D17 /* ServiceError.swift */; };
 		1DDDF6EF232D2F5100844D17 /* URLRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DF232D2F5100844D17 /* URLRequestProtocol.swift */; };
@@ -45,8 +52,6 @@
 /* Begin PBXFileReference section */
 		1DAC11F3232D2E6400F109E1 /* TopJavaRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopJavaRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1DAC11F8232D2E6400F109E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1DAC11FB232D2E6400F109E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DAC1200232D2E6400F109E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DAC1203232D2E6400F109E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DAC1205232D2E6400F109E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,12 +59,21 @@
 		1DAC120E232D2E6400F109E1 /* TopJavaRepositoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopJavaRepositoriesTests.swift; sourceTree = "<group>"; };
 		1DAC1210232D2E6400F109E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DAC121B232D317900F109E1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		1DAC121E232D355C00F109E1 /* ListRepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesPresenter.swift; sourceTree = "<group>"; };
+		1DAC121F232D355C00F109E1 /* ListRepositoriesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesWorker.swift; sourceTree = "<group>"; };
+		1DAC1220232D355C00F109E1 /* ListRepositoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesRouter.swift; sourceTree = "<group>"; };
+		1DAC1221232D355C00F109E1 /* ListRepositoriesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesModels.swift; sourceTree = "<group>"; };
+		1DAC1222232D355C00F109E1 /* ListRepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesViewController.swift; sourceTree = "<group>"; };
+		1DAC1223232D355C00F109E1 /* ListRepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesInteractor.swift; sourceTree = "<group>"; };
+		1DAC1224232D355C00F109E1 /* ListRepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListRepositoriesViewController.xib; sourceTree = "<group>"; };
+		1DAC122D232D37BF00F109E1 /* ListRepositoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesCell.swift; sourceTree = "<group>"; };
+		1DAC122E232D37BF00F109E1 /* ListRepositoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListRepositoriesCell.xib; sourceTree = "<group>"; };
+		1DAC1231232D384800F109E1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopJavaRepositoriesProvider.swift; sourceTree = "<group>"; };
 		1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
 		1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
-		1DDDF6D8232D2F5100844D17 /* Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TopRatedJavaRepositories.strings; sourceTree = "<group>"; };
 		1DDDF6DA232D2F5100844D17 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
-		1DDDF6DB232D2F5100844D17 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		1DDDF6DD232D2F5100844D17 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
 		1DDDF6DE232D2F5100844D17 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 		1DDDF6DF232D2F5100844D17 /* URLRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestProtocol.swift; sourceTree = "<group>"; };
@@ -122,8 +136,6 @@
 				1DDDF6D2232D2F5100844D17 /* Common */,
 				1DDDF6F9232D2FA700844D17 /* Modules */,
 				1DDDF6F4232D2F6B00844D17 /* Supporting Files */,
-				1DAC11F8232D2E6400F109E1 /* ViewController.swift */,
-				1DAC11FA232D2E6400F109E1 /* Main.storyboard */,
 			);
 			path = TopJavaRepositories;
 			sourceTree = "<group>";
@@ -135,6 +147,39 @@
 				1DAC1210232D2E6400F109E1 /* Info.plist */,
 			);
 			path = TopJavaRepositoriesTests;
+			sourceTree = "<group>";
+		};
+		1DAC121D232D353400F109E1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC1233232D3BA800F109E1 /* Provider */,
+				1DAC122C232D379F00F109E1 /* Views */,
+				1DAC121F232D355C00F109E1 /* ListRepositoriesWorker.swift */,
+				1DAC1220232D355C00F109E1 /* ListRepositoriesRouter.swift */,
+				1DAC1221232D355C00F109E1 /* ListRepositoriesModels.swift */,
+				1DAC1223232D355C00F109E1 /* ListRepositoriesInteractor.swift */,
+				1DAC121E232D355C00F109E1 /* ListRepositoriesPresenter.swift */,
+				1DAC1222232D355C00F109E1 /* ListRepositoriesViewController.swift */,
+				1DAC1224232D355C00F109E1 /* ListRepositoriesViewController.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1DAC122C232D379F00F109E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC122D232D37BF00F109E1 /* ListRepositoriesCell.swift */,
+				1DAC122E232D37BF00F109E1 /* ListRepositoriesCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1DAC1233232D3BA800F109E1 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		1DDDF6D2232D2F5100844D17 /* Common */ = {
@@ -161,10 +206,9 @@
 		1DDDF6D7232D2F5100844D17 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1DDDF6D8232D2F5100844D17 /* Constraints.swift */,
-				1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */,
 				1DDDF6DA232D2F5100844D17 /* Font.swift */,
-				1DDDF6DB232D2F5100844D17 /* Colors.swift */,
+				1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */,
+				1DAC1231232D384800F109E1 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -213,6 +257,7 @@
 		1DDDF6F9232D2FA700844D17 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				1DAC121D232D353400F109E1 /* List */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -325,9 +370,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DAC1204232D2E6400F109E1 /* LaunchScreen.storyboard in Resources */,
+				1DAC1230232D37BF00F109E1 /* ListRepositoriesCell.xib in Resources */,
 				1DAC1201232D2E6400F109E1 /* Assets.xcassets in Resources */,
-				1DAC11FC232D2E6400F109E1 /* Main.storyboard in Resources */,
+				1DAC1232232D384800F109E1 /* Colors.xcassets in Resources */,
 				1DDDF6EA232D2F5100844D17 /* TopRatedJavaRepositories.strings in Resources */,
+				1DAC122B232D355C00F109E1 /* ListRepositoriesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -467,21 +514,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DDDF6E6232D2F5100844D17 /* ReusableCells.swift in Sources */,
-				1DDDF6EC232D2F5100844D17 /* Colors.swift in Sources */,
-				1DDDF6E9232D2F5100844D17 /* Constraints.swift in Sources */,
+				1DAC1227232D355C00F109E1 /* ListRepositoriesRouter.swift in Sources */,
+				1DAC122F232D37BF00F109E1 /* ListRepositoriesCell.swift in Sources */,
 				1DDDF6E8232D2F5100844D17 /* CommonTypes.swift in Sources */,
 				1DDDF6EF232D2F5100844D17 /* URLRequestProtocol.swift in Sources */,
 				1DDDF6EB232D2F5100844D17 /* Font.swift in Sources */,
 				1DDDF6F1232D2F5100844D17 /* Repository.swift in Sources */,
-				1DAC11F9232D2E6400F109E1 /* ViewController.swift in Sources */,
 				1DDDF6EE232D2F5100844D17 /* ServiceError.swift in Sources */,
 				1DDDF6F0232D2F5100844D17 /* Repositories.swift in Sources */,
 				1DDDF6F6232D2F7C00844D17 /* ENV.swift in Sources */,
 				1DAC121C232D317900F109E1 /* R.generated.swift in Sources */,
 				1DAC11F7232D2E6400F109E1 /* AppDelegate.swift in Sources */,
 				1DDDF6F2232D2F5100844D17 /* Owner.swift in Sources */,
+				1DAC1229232D355C00F109E1 /* ListRepositoriesViewController.swift in Sources */,
+				1DAC122A232D355C00F109E1 /* ListRepositoriesInteractor.swift in Sources */,
+				1DAC1235232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift in Sources */,
 				1DDDF6F3232D2F5100844D17 /* ViewControllerBaseProtocol.swift in Sources */,
+				1DAC1226232D355C00F109E1 /* ListRepositoriesWorker.swift in Sources */,
+				1DAC1225232D355C00F109E1 /* ListRepositoriesPresenter.swift in Sources */,
 				1DDDF6ED232D2F5100844D17 /* NetworkProvider.swift in Sources */,
+				1DAC1228232D355C00F109E1 /* ListRepositoriesModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,14 +556,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1DAC11FA232D2E6400F109E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DAC11FB232D2E6400F109E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1DAC1202232D2E6400F109E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

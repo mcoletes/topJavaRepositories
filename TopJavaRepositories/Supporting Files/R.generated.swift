@@ -16,21 +16,90 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
+  /// This `R.color` struct is generated, and contains static references to 3 colors.
+  struct color {
+    /// Color `Light Blue`.
+    static let lightBlue = Rswift.ColorResource(bundle: R.hostingBundle, name: "Light Blue")
+    /// Color `Text Gray`.
+    static let textGray = Rswift.ColorResource(bundle: R.hostingBundle, name: "Text Gray")
+    /// Color `Text Yellow`.
+    static let textYellow = Rswift.ColorResource(bundle: R.hostingBundle, name: "Text Yellow")
+    
+    /// `UIColor(named: "Light Blue", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func lightBlue(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.lightBlue, compatibleWith: traitCollection)
+    }
+    
+    /// `UIColor(named: "Text Gray", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func textGray(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.textGray, compatibleWith: traitCollection)
+    }
+    
+    /// `UIColor(named: "Text Yellow", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func textYellow(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.textYellow, compatibleWith: traitCollection)
+    }
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `github_icon`.
+    static let github_icon = Rswift.ImageResource(bundle: R.hostingBundle, name: "github_icon")
+    
+    /// `UIImage(named: "github_icon", bundle: ..., traitCollection: ...)`
+    static func github_icon(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.github_icon, compatibleWith: traitCollection)
+    }
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.nib` struct is generated, and contains static references to 2 nibs.
+  struct nib {
+    /// Nib `ListRepositoriesCell`.
+    static let listRepositoriesCell = _R.nib._ListRepositoriesCell()
+    /// Nib `ListRepositoriesViewController`.
+    static let listRepositoriesViewController = _R.nib._ListRepositoriesViewController()
+    
+    /// `UINib(name: "ListRepositoriesCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.listRepositoriesCell) instead")
+    static func listRepositoriesCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.listRepositoriesCell)
+    }
+    
+    /// `UINib(name: "ListRepositoriesViewController", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.listRepositoriesViewController) instead")
+    static func listRepositoriesViewController(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.listRepositoriesViewController)
+    }
+    
+    static func listRepositoriesCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListRepositoriesCell? {
+      return R.nib.listRepositoriesCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListRepositoriesCell
+    }
+    
+    static func listRepositoriesViewController(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+      return R.nib.listRepositoriesViewController.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+    }
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.storyboard` struct is generated, and contains static references to 1 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
-    /// Storyboard `Main`.
-    static let main = _R.storyboard.main()
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.launchScreen)
-    }
-    
-    /// `UIStoryboard(name: "Main", bundle: ...)`
-    static func main(_: Void = ()) -> UIKit.UIStoryboard {
-      return UIKit.UIStoryboard(resource: R.storyboard.main)
     }
     
     fileprivate init() {}
@@ -40,6 +109,8 @@ struct R: Rswift.Validatable {
   struct string {
     /// This `R.string.topRatedJavaRepositories` struct is generated, and contains static references to 6 localization keys.
     struct topRatedJavaRepositories {
+      /// Value: Github Java Pop
+      static let topRepositoriesTitle = Rswift.StringResource(key: "topRepositoriesTitle", tableName: "TopRatedJavaRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: No internet connection
       static let noInternetConnectionMessage = Rswift.StringResource(key: "noInternetConnectionMessage", tableName: "TopRatedJavaRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: OK
@@ -48,10 +119,13 @@ struct R: Rswift.Validatable {
       static let warningTitle = Rswift.StringResource(key: "warningTitle", tableName: "TopRatedJavaRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Something went wrong. Please try again!
       static let tryAgainMessage = Rswift.StringResource(key: "tryAgainMessage", tableName: "TopRatedJavaRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: Top Rated Repositories
-      static let topRepositoriesTitle = Rswift.StringResource(key: "topRepositoriesTitle", tableName: "TopRatedJavaRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: Try Again
       static let tryAgainActionTitle = Rswift.StringResource(key: "tryAgainActionTitle", tableName: "TopRatedJavaRepositories", bundle: R.hostingBundle, locales: [], comment: nil)
+      
+      /// Value: Github Java Pop
+      static func topRepositoriesTitle(_: Void = ()) -> String {
+        return NSLocalizedString("topRepositoriesTitle", tableName: "TopRatedJavaRepositories", bundle: R.hostingBundle, comment: "")
+      }
       
       /// Value: No internet connection
       static func noInternetConnectionMessage(_: Void = ()) -> String {
@@ -71,11 +145,6 @@ struct R: Rswift.Validatable {
       /// Value: Something went wrong. Please try again!
       static func tryAgainMessage(_: Void = ()) -> String {
         return NSLocalizedString("tryAgainMessage", tableName: "TopRatedJavaRepositories", bundle: R.hostingBundle, comment: "")
-      }
-      
-      /// Value: Top Rated Repositories
-      static func topRepositoriesTitle(_: Void = ()) -> String {
-        return NSLocalizedString("topRepositoriesTitle", tableName: "TopRatedJavaRepositories", bundle: R.hostingBundle, comment: "")
       }
       
       /// Value: Try Again
@@ -107,10 +176,35 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
   }
   
+  struct nib {
+    struct _ListRepositoriesCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "ListRepositoriesCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> ListRepositoriesCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? ListRepositoriesCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct _ListRepositoriesViewController: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "ListRepositoriesViewController"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> UIKit.UIView? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? UIKit.UIView
+      }
+      
+      fileprivate init() {}
+    }
+    
+    fileprivate init() {}
+  }
+  
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       try launchScreen.validate()
-      try main.validate()
     }
     
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -120,20 +214,7 @@ struct _R: Rswift.Validatable {
       let name = "LaunchScreen"
       
       static func validate() throws {
-        if #available(iOS 11.0, *) {
-        }
-      }
-      
-      fileprivate init() {}
-    }
-    
-    struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ViewController
-      
-      let bundle = R.hostingBundle
-      let name = "Main"
-      
-      static func validate() throws {
+        if UIKit.UIImage(named: "github_icon", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'github_icon' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {
         }
       }
