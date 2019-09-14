@@ -38,6 +38,6 @@ class ListRepositoriesPresenter: ListRepositoriesPresentationLogic {
     }
     
     func presentViewModelFromModel(repository: Repository) -> ListRepositories.ViewModel? {
-        return ListRepositories.ViewModel(name: repository.name ?? "", stars: repository.stargazersCount ?? 0, ownerName: repository.owner?.login ?? "", ownerPhotoURL: URL(string: repository.owner!.avatarUrl!)!)
+        return ListRepositories.ViewModel(name: repository.name, stars: repository.stargazersCount, ownerName: repository.owner.login, ownerPhotoURL: URL(string: repository.owner.avatarUrl)!, forks: repository.forks, description: repository.description)
     }
 }

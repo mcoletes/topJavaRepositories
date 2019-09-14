@@ -26,6 +26,8 @@ enum ListRepositories {
         var stars: Int
         var ownerName: String
         var ownerPhotoURL: URL
+        var forks: Int
+        var description: String
     }
     
     enum errors {

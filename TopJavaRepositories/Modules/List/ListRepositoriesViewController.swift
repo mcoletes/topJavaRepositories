@@ -94,6 +94,7 @@ extension ListRepositoriesViewController: UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ListRepositoriesCell = tableView.dequeueReusableCell(for: indexPath)
         if let item = interactor?.viewModelForIndex(index: indexPath.row) {
+            cell.configure(name: item.name, repoDescription: item.description, pullRequests: "\(item.forks)", stars: "\(item.stars)", repoImage: item.ownerPhotoURL, username: item.ownerName) 
 //            cell.configure(name: item.name, stars: "\(item.stars)", ownerName: item.ownerName, ownerImageURL: item.ownerPhotoURL)
             return cell
         }

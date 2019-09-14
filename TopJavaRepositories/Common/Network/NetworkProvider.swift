@@ -30,7 +30,9 @@ class NetworkProvider {
     
     @discardableResult
     open func fetch<T: Decodable>(onSuccess: @escaping (T) -> Void, onError: @escaping (ServiceError) -> Void) -> URLSessionDataTask {
-        let session = URLSession(configuration: configuration).dataTask(with: route.asURLRequest()) { data, response, error in
+        let request = route.asURLRequest()
+         Logger.logRequest(request: request)
+        let session = URLSession(configuration: configuration).dataTask(with: request) { data, response, error in
             self.handleDecodableResponse(data: data, response: response, error: error, onSuccess: onSuccess, onError: onError)
         }
         session.resume()
@@ -43,6 +45,8 @@ class NetworkProvider {
                                                error: Error?,
                                                onSuccess: ((T) -> Void),
                                                onError: ((ServiceError) -> Void)) {
+        
+        Logger.logResponse(response, data)
         
         guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
             onError(ServiceError.requestFailed)
