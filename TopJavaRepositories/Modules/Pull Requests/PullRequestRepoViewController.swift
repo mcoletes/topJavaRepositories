@@ -71,10 +71,6 @@ class PullRequestRepoViewController: UIViewController {
 
 extension PullRequestRepoViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func PullRequestRepoViewController(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return interactor?.numbeOfRows() ?? 0
     }

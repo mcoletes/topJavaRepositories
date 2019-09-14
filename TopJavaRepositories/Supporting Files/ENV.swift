@@ -39,11 +39,4 @@ public struct ENV {
             return "https://\(value)"
         }
     }
-    
-    public static func double( _ key: PlistKey) -> Double {
-        guard let value = infoDict[key.value()] as? Double else {
-            return 0
-        }
-        return value
-    }
 }
