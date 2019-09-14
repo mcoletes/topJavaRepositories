@@ -10,10 +10,24 @@
 		1DAC11F7232D2E6400F109E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */; };
 		1DAC11F9232D2E6400F109E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC11F8232D2E6400F109E1 /* ViewController.swift */; };
 		1DAC11FC232D2E6400F109E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC11FA232D2E6400F109E1 /* Main.storyboard */; };
-		1DAC11FF232D2E6400F109E1 /* TopJavaRepositories.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC11FD232D2E6400F109E1 /* TopJavaRepositories.xcdatamodeld */; };
 		1DAC1201232D2E6400F109E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1200232D2E6400F109E1 /* Assets.xcassets */; };
 		1DAC1204232D2E6400F109E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1202232D2E6400F109E1 /* LaunchScreen.storyboard */; };
 		1DAC120F232D2E6400F109E1 /* TopJavaRepositoriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC120E232D2E6400F109E1 /* TopJavaRepositoriesTests.swift */; };
+		1DAC121C232D317900F109E1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC121B232D317900F109E1 /* R.generated.swift */; };
+		1DDDF6E6232D2F5100844D17 /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */; };
+		1DDDF6E8232D2F5100844D17 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */; };
+		1DDDF6E9232D2F5100844D17 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D8232D2F5100844D17 /* Constraints.swift */; };
+		1DDDF6EA232D2F5100844D17 /* TopRatedJavaRepositories.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */; };
+		1DDDF6EB232D2F5100844D17 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DA232D2F5100844D17 /* Font.swift */; };
+		1DDDF6EC232D2F5100844D17 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DB232D2F5100844D17 /* Colors.swift */; };
+		1DDDF6ED232D2F5100844D17 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DD232D2F5100844D17 /* NetworkProvider.swift */; };
+		1DDDF6EE232D2F5100844D17 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DE232D2F5100844D17 /* ServiceError.swift */; };
+		1DDDF6EF232D2F5100844D17 /* URLRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DF232D2F5100844D17 /* URLRequestProtocol.swift */; };
+		1DDDF6F0232D2F5100844D17 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6E1232D2F5100844D17 /* Repositories.swift */; };
+		1DDDF6F1232D2F5100844D17 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6E2232D2F5100844D17 /* Repository.swift */; };
+		1DDDF6F2232D2F5100844D17 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6E3232D2F5100844D17 /* Owner.swift */; };
+		1DDDF6F3232D2F5100844D17 /* ViewControllerBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6E5232D2F5100844D17 /* ViewControllerBaseProtocol.swift */; };
+		1DDDF6F6232D2F7C00844D17 /* ENV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6F5232D2F7C00844D17 /* ENV.swift */; };
 		5054116E4EF6C57B62FFF273 /* Pods_TopJavaRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E981E644A09F4BF9672AA02 /* Pods_TopJavaRepositories.framework */; };
 		8861BFC264BE1F60A2F63B8A /* Pods_TopJavaRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BE3727307749730E79FEF2 /* Pods_TopJavaRepositoriesTests.framework */; };
 /* End PBXBuildFile section */
@@ -33,13 +47,27 @@
 		1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DAC11F8232D2E6400F109E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1DAC11FB232D2E6400F109E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1DAC11FE232D2E6400F109E1 /* TopJavaRepositories.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TopJavaRepositories.xcdatamodel; sourceTree = "<group>"; };
 		1DAC1200232D2E6400F109E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DAC1203232D2E6400F109E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DAC1205232D2E6400F109E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DAC120A232D2E6400F109E1 /* TopJavaRepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopJavaRepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAC120E232D2E6400F109E1 /* TopJavaRepositoriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopJavaRepositoriesTests.swift; sourceTree = "<group>"; };
 		1DAC1210232D2E6400F109E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DAC121B232D317900F109E1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
+		1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
+		1DDDF6D8232D2F5100844D17 /* Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TopRatedJavaRepositories.strings; sourceTree = "<group>"; };
+		1DDDF6DA232D2F5100844D17 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1DDDF6DB232D2F5100844D17 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		1DDDF6DD232D2F5100844D17 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		1DDDF6DE232D2F5100844D17 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		1DDDF6DF232D2F5100844D17 /* URLRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestProtocol.swift; sourceTree = "<group>"; };
+		1DDDF6E1232D2F5100844D17 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		1DDDF6E2232D2F5100844D17 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1DDDF6E3232D2F5100844D17 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		1DDDF6E5232D2F5100844D17 /* ViewControllerBaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBaseProtocol.swift; sourceTree = "<group>"; };
+		1DDDF6F5232D2F7C00844D17 /* ENV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENV.swift; sourceTree = "<group>"; };
 		1E981E644A09F4BF9672AA02 /* Pods_TopJavaRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopJavaRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		363B62861D91B834E441ABC2 /* Pods-TopJavaRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopJavaRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-TopJavaRepositoriesTests/Pods-TopJavaRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABFCB2EFFAA0BCA3516F0F72 /* Pods-TopJavaRepositoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopJavaRepositoriesTests.debug.xcconfig"; path = "Target Support Files/Pods-TopJavaRepositoriesTests/Pods-TopJavaRepositoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -91,13 +119,11 @@
 		1DAC11F5232D2E6400F109E1 /* TopJavaRepositories */ = {
 			isa = PBXGroup;
 			children = (
-				1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */,
+				1DDDF6D2232D2F5100844D17 /* Common */,
+				1DDDF6F9232D2FA700844D17 /* Modules */,
+				1DDDF6F4232D2F6B00844D17 /* Supporting Files */,
 				1DAC11F8232D2E6400F109E1 /* ViewController.swift */,
 				1DAC11FA232D2E6400F109E1 /* Main.storyboard */,
-				1DAC1200232D2E6400F109E1 /* Assets.xcassets */,
-				1DAC1202232D2E6400F109E1 /* LaunchScreen.storyboard */,
-				1DAC1205232D2E6400F109E1 /* Info.plist */,
-				1DAC11FD232D2E6400F109E1 /* TopJavaRepositories.xcdatamodeld */,
 			);
 			path = TopJavaRepositories;
 			sourceTree = "<group>";
@@ -109,6 +135,86 @@
 				1DAC1210232D2E6400F109E1 /* Info.plist */,
 			);
 			path = TopJavaRepositoriesTests;
+			sourceTree = "<group>";
+		};
+		1DDDF6D2232D2F5100844D17 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6D3232D2F5100844D17 /* Configuration */,
+				1DDDF6D7232D2F5100844D17 /* Resources */,
+				1DDDF6DC232D2F5100844D17 /* Network */,
+				1DDDF6E0232D2F5100844D17 /* Models */,
+				1DDDF6E4232D2F5100844D17 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1DDDF6D3232D2F5100844D17 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */,
+				1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		1DDDF6D7232D2F5100844D17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6D8232D2F5100844D17 /* Constraints.swift */,
+				1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */,
+				1DDDF6DA232D2F5100844D17 /* Font.swift */,
+				1DDDF6DB232D2F5100844D17 /* Colors.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1DDDF6DC232D2F5100844D17 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6DD232D2F5100844D17 /* NetworkProvider.swift */,
+				1DDDF6DE232D2F5100844D17 /* ServiceError.swift */,
+				1DDDF6DF232D2F5100844D17 /* URLRequestProtocol.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1DDDF6E0232D2F5100844D17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6E1232D2F5100844D17 /* Repositories.swift */,
+				1DDDF6E2232D2F5100844D17 /* Repository.swift */,
+				1DDDF6E3232D2F5100844D17 /* Owner.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DDDF6E4232D2F5100844D17 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6E5232D2F5100844D17 /* ViewControllerBaseProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1DDDF6F4232D2F6B00844D17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC121B232D317900F109E1 /* R.generated.swift */,
+				1DAC1205232D2E6400F109E1 /* Info.plist */,
+				1DAC1202232D2E6400F109E1 /* LaunchScreen.storyboard */,
+				1DAC1200232D2E6400F109E1 /* Assets.xcassets */,
+				1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */,
+				1DDDF6F5232D2F7C00844D17 /* ENV.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DDDF6F9232D2FA700844D17 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		5981141B4B3C24BD6B02D52B /* Frameworks */ = {
@@ -139,6 +245,7 @@
 			buildConfigurationList = 1DAC1213232D2E6400F109E1 /* Build configuration list for PBXNativeTarget "TopJavaRepositories" */;
 			buildPhases = (
 				6849F695B89288AE7F7AD650 /* [CP] Check Pods Manifest.lock */,
+				1DAC121A232D312100F109E1 /* R Swift */,
 				1DAC11EF232D2E6300F109E1 /* Sources */,
 				1DAC11F0232D2E6300F109E1 /* Frameworks */,
 				1DAC11F1232D2E6300F109E1 /* Resources */,
@@ -158,6 +265,7 @@
 			buildConfigurationList = 1DAC1216232D2E6400F109E1 /* Build configuration list for PBXNativeTarget "TopJavaRepositoriesTests" */;
 			buildPhases = (
 				9CD4864F9475AB46ADFA07AA /* [CP] Check Pods Manifest.lock */,
+				1DDDF6FA232D301B00844D17 /* R Swift */,
 				1DAC1206232D2E6400F109E1 /* Sources */,
 				1DAC1207232D2E6400F109E1 /* Frameworks */,
 				1DAC1208232D2E6400F109E1 /* Resources */,
@@ -219,6 +327,7 @@
 				1DAC1204232D2E6400F109E1 /* LaunchScreen.storyboard in Resources */,
 				1DAC1201232D2E6400F109E1 /* Assets.xcassets in Resources */,
 				1DAC11FC232D2E6400F109E1 /* Main.storyboard in Resources */,
+				1DDDF6EA232D2F5100844D17 /* TopRatedJavaRepositories.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +357,46 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TopJavaRepositoriesTests/Pods-TopJavaRepositoriesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		1DAC121A232D312100F109E1 /* R Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R Swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/TopJavaRepositories/Supporting Files/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/TopJavaRepositories/Supporting Files/R.generated.swift\"\n";
+		};
+		1DDDF6FA232D301B00844D17 /* R Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R Swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/TopRatedJavaRepositories/Supporting Files/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/TopRatedJavaRepositories/Supporting Files/R.generated.swift\"\n";
 		};
 		6849F695B89288AE7F7AD650 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -317,9 +466,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DAC11FF232D2E6400F109E1 /* TopJavaRepositories.xcdatamodeld in Sources */,
+				1DDDF6E6232D2F5100844D17 /* ReusableCells.swift in Sources */,
+				1DDDF6EC232D2F5100844D17 /* Colors.swift in Sources */,
+				1DDDF6E9232D2F5100844D17 /* Constraints.swift in Sources */,
+				1DDDF6E8232D2F5100844D17 /* CommonTypes.swift in Sources */,
+				1DDDF6EF232D2F5100844D17 /* URLRequestProtocol.swift in Sources */,
+				1DDDF6EB232D2F5100844D17 /* Font.swift in Sources */,
+				1DDDF6F1232D2F5100844D17 /* Repository.swift in Sources */,
 				1DAC11F9232D2E6400F109E1 /* ViewController.swift in Sources */,
+				1DDDF6EE232D2F5100844D17 /* ServiceError.swift in Sources */,
+				1DDDF6F0232D2F5100844D17 /* Repositories.swift in Sources */,
+				1DDDF6F6232D2F7C00844D17 /* ENV.swift in Sources */,
+				1DAC121C232D317900F109E1 /* R.generated.swift in Sources */,
 				1DAC11F7232D2E6400F109E1 /* AppDelegate.swift in Sources */,
+				1DDDF6F2232D2F5100844D17 /* Owner.swift in Sources */,
+				1DDDF6F3232D2F5100844D17 /* ViewControllerBaseProtocol.swift in Sources */,
+				1DDDF6ED232D2F5100844D17 /* NetworkProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +646,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59L34GWFDZ;
-				INFOPLIST_FILE = TopJavaRepositories/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TopJavaRepositories/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,7 +665,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59L34GWFDZ;
-				INFOPLIST_FILE = TopJavaRepositories/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TopJavaRepositories/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,19 +750,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		1DAC11FD232D2E6400F109E1 /* TopJavaRepositories.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1DAC11FE232D2E6400F109E1 /* TopJavaRepositories.xcdatamodel */,
-			);
-			currentVersion = 1DAC11FE232D2E6400F109E1 /* TopJavaRepositories.xcdatamodel */;
-			path = TopJavaRepositories.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 1DAC11EB232D2E6300F109E1 /* Project object */;
 }

@@ -1,0 +1,15 @@
+/* 
+  TopRatedRepositories.strings
+  TopRatedRepositories
+
+  Created by Mauro Sasso Coletes on 12/04/19.
+  Copyright © 2019 MSC. All rights reserved.
+*/
+
+"warningTitle" = "Ops";
+"noInternetConnectionMessage" = "No internet connection";
+"tryAgainMessage" = "Something went wrong. Please try again!";
+"tryAgainActionTitle" = "Try Again";
+"okActionTitle" = "OK";
+"topRepositoriesTitle" = "Top Rated Repositories";
+
