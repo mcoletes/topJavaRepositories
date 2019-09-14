@@ -29,8 +29,14 @@ class PullRequestRepoCell: UITableViewCell, ReusableView, NibLoadableView {
     func configure(name: String, pullDescription: String, repoImage: URL?, username: String) {
         
         self.name.text = name
+        self.name.accessibilityLabel = "nome: \(name)"
+        
         self.pullDescription.text = pullDescription
+        self.pullDescription.accessibilityLabel = "descrição: \(pullDescription)"
+        
         self.username.text = username
+        self.username.accessibilityLabel = "usuário: \(username)"
+
         self.repoImage.sd_setImage(with: repoImage, placeholderImage: #imageLiteral(resourceName: "userLogo"))
     }
 }

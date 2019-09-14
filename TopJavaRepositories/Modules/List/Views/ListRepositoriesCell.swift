@@ -34,10 +34,21 @@ class ListRepositoriesCell: UITableViewCell, ReusableView, NibLoadableView {
     func configure(name: String, repoDescription: String, pullRequests: String, stars: String, repoImage: URL?, username: String) {
 
         self.name.text = name
+        self.name.accessibilityLabel = "nome: \(name)"
+        
         self.repoDescription.text = repoDescription
+        self.repoDescription.accessibilityLabel = "descrição: \(repoDescription)"
+        
         self.username.text = username
+        self.username.accessibilityLabel = "usuário: \(username)"
+        
         self.repoImage.sd_setImage(with: repoImage, placeholderImage: #imageLiteral(resourceName: "userLogo"))
+        
         self.stars.setupIconWithText(text: stars, icon: FontAwesome.star)
+        self.stars.accessibilityLabel = "estrelas: \(stars)"
+        
         self.pullRequests.setupIconWithText(text: pullRequests, icon: FontAwesome.codeBranch)
+        self.pullRequests.accessibilityLabel = "forks: \(pullRequests)"
+        
     }    
 }
