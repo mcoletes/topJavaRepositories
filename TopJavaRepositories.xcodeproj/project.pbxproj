@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D832BB2232D7E60003B1C84 /* JsonLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BB1232D7E60003B1C84 /* JsonLoader.swift */; };
+		1D832BB4232D7E97003B1C84 /* ReturnTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BB3232D7E97003B1C84 /* ReturnTypes.swift */; };
+		1D832BB6232D7EAE003B1C84 /* ListRepositoriesWorkerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BB5232D7EAE003B1C84 /* ListRepositoriesWorkerStub.swift */; };
+		1D832BC0232D7FB9003B1C84 /* pullRequests.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D832BBF232D7FB9003B1C84 /* pullRequests.json */; };
+		1D832BC4232D800C003B1C84 /* PullRequestRepoPresenterStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BC3232D800C003B1C84 /* PullRequestRepoPresenterStub.swift */; };
+		1D832BC6232D8017003B1C84 /* PullRequestRepoWorkerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BC5232D8017003B1C84 /* PullRequestRepoWorkerStub.swift */; };
+		1D832BCA232D80F5003B1C84 /* ListRepositoriesInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BC9232D80F5003B1C84 /* ListRepositoriesInteractorTest.swift */; };
+		1D832BCB232D8224003B1C84 /* topRepositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D832BBE232D7F9B003B1C84 /* topRepositories.json */; };
+		1D832BCD232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BCC232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift */; };
+		1D832BCF232D894B003B1C84 /* ListRepositoriesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BCE232D894B003B1C84 /* ListRepositoriesViewControllerTests.swift */; };
+		1D832BD4232D8F51003B1C84 /* PullRequestsRepoViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BD3232D8F51003B1C84 /* PullRequestsRepoViewControllerTests.swift */; };
+		1DAC11F7232D2E6400F109E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */; };
+		1DAC1201232D2E6400F109E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1200232D2E6400F109E1 /* Assets.xcassets */; };
+		1DAC1204232D2E6400F109E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1202232D2E6400F109E1 /* LaunchScreen.storyboard */; };
+		1DAC121C232D317900F109E1 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC121B232D317900F109E1 /* R.generated.swift */; };
+		1DAC1225232D355C00F109E1 /* ListRepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC121E232D355C00F109E1 /* ListRepositoriesPresenter.swift */; };
+		1DAC1226232D355C00F109E1 /* ListRepositoriesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC121F232D355C00F109E1 /* ListRepositoriesWorker.swift */; };
+		1DAC1227232D355C00F109E1 /* ListRepositoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1220232D355C00F109E1 /* ListRepositoriesRouter.swift */; };
+		1DAC1228232D355C00F109E1 /* ListRepositoriesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1221232D355C00F109E1 /* ListRepositoriesModels.swift */; };
+		1DAC1229232D355C00F109E1 /* ListRepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1222232D355C00F109E1 /* ListRepositoriesViewController.swift */; };
+		1DAC122A232D355C00F109E1 /* ListRepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1223232D355C00F109E1 /* ListRepositoriesInteractor.swift */; };
+		1DAC122B232D355C00F109E1 /* ListRepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1224232D355C00F109E1 /* ListRepositoriesViewController.xib */; };
+		1DAC122F232D37BF00F109E1 /* ListRepositoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC122D232D37BF00F109E1 /* ListRepositoriesCell.swift */; };
+		1DAC1230232D37BF00F109E1 /* ListRepositoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC122E232D37BF00F109E1 /* ListRepositoriesCell.xib */; };
+		1DAC1232232D384800F109E1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1231232D384800F109E1 /* Colors.xcassets */; };
+		1DAC1235232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */; };
+		1DAC1237232D430400F109E1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1236232D430400F109E1 /* Logger.swift */; };
+		1DAC123B232D4F5100F109E1 /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC123A232D4F5100F109E1 /* UILabel + Extensions.swift */; };
+		1DAC1246232D50DB00F109E1 /* PullRequestRepoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC123F232D50DB00F109E1 /* PullRequestRepoPresenter.swift */; };
+		1DAC1247232D50DB00F109E1 /* PullRequestRepoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1240232D50DB00F109E1 /* PullRequestRepoWorker.swift */; };
+		1DAC1248232D50DB00F109E1 /* PullRequestRepoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1241232D50DB00F109E1 /* PullRequestRepoRouter.swift */; };
+		1DAC1249232D50DB00F109E1 /* PullRequestRepoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1242232D50DB00F109E1 /* PullRequestRepoModels.swift */; };
+		1DAC124A232D50DB00F109E1 /* PullRequestRepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1243232D50DB00F109E1 /* PullRequestRepoViewController.swift */; };
+		1DAC124B232D50DB00F109E1 /* PullRequestRepoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1244232D50DB00F109E1 /* PullRequestRepoInteractor.swift */; };
+		1DAC124C232D50DB00F109E1 /* PullRequestRepoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1245232D50DB00F109E1 /* PullRequestRepoViewController.xib */; };
+		1DAC124E232D511E00F109E1 /* PullRequestRepoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC124D232D511E00F109E1 /* PullRequestRepoProvider.swift */; };
+		1DAC1253232D513700F109E1 /* PullRequestRepoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1251232D513700F109E1 /* PullRequestRepoCell.swift */; };
+		1DAC1254232D513700F109E1 /* PullRequestRepoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1252232D513700F109E1 /* PullRequestRepoCell.xib */; };
+		1DAC1256232D570D00F109E1 /* PullRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1255232D570D00F109E1 /* PullRequests.swift */; };
+		1DAC1258232D676000F109E1 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1257232D676000F109E1 /* UITableView+Extensions.swift */; };
+		1DAC125F232D7C6900F109E1 /* ListRepositoriesPresenterStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC125E232D7C6900F109E1 /* ListRepositoriesPresenterStub.swift */; };
+		1DDDF6E6232D2F5100844D17 /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */; };
+		1DDDF6E8232D2F5100844D17 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */; };
+		1DDDF6EA232D2F5100844D17 /* TopRatedJavaRepositories.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */; };
+		1DDDF6EB232D2F5100844D17 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DA232D2F5100844D17 /* Font.swift */; };
+		1DDDF6ED232D2F5100844D17 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DD232D2F5100844D17 /* NetworkProvider.swift */; };
+		1DDDF6EE232D2F5100844D17 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DE232D2F5100844D17 /* ServiceError.swift */; };
+		1DDDF6EF232D2F5100844D17 /* URLRequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6DF232D2F5100844D17 /* URLRequestProtocol.swift */; };
+		1DDDF6F0232D2F5100844D17 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6E1232D2F5100844D17 /* Repositories.swift */; };
+		1DDDF6F1232D2F5100844D17 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6E2232D2F5100844D17 /* Repository.swift */; };
+		1DDDF6F2232D2F5100844D17 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6E3232D2F5100844D17 /* Owner.swift */; };
+		1DDDF6F3232D2F5100844D17 /* ViewControllerBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6E5232D2F5100844D17 /* ViewControllerBaseProtocol.swift */; };
+		1DDDF6F6232D2F7C00844D17 /* ENV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6F5232D2F7C00844D17 /* ENV.swift */; };
+		5054116E4EF6C57B62FFF273 /* Pods_TopJavaRepositories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E981E644A09F4BF9672AA02 /* Pods_TopJavaRepositories.framework */; };
+		8861BFC264BE1F60A2F63B8A /* Pods_TopJavaRepositoriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1BE3727307749730E79FEF2 /* Pods_TopJavaRepositoriesTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DAC120B232D2E6400F109E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DAC11EB232D2E6300F109E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DAC11F2232D2E6300F109E1;
+			remoteInfo = TopJavaRepositories;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D832BB1232D7E60003B1C84 /* JsonLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonLoader.swift; sourceTree = "<group>"; };
+		1D832BB3232D7E97003B1C84 /* ReturnTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnTypes.swift; sourceTree = "<group>"; };
+		1D832BB5232D7EAE003B1C84 /* ListRepositoriesWorkerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesWorkerStub.swift; sourceTree = "<group>"; };
+		1D832BBE232D7F9B003B1C84 /* topRepositories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = topRepositories.json; sourceTree = "<group>"; };
+		1D832BBF232D7FB9003B1C84 /* pullRequests.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = pullRequests.json; sourceTree = "<group>"; };
+		1D832BC3232D800C003B1C84 /* PullRequestRepoPresenterStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoPresenterStub.swift; sourceTree = "<group>"; };
+		1D832BC5232D8017003B1C84 /* PullRequestRepoWorkerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoWorkerStub.swift; sourceTree = "<group>"; };
+		1D832BC9232D80F5003B1C84 /* ListRepositoriesInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesInteractorTest.swift; sourceTree = "<group>"; };
+		1D832BCC232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsRepoInteractorTests.swift; sourceTree = "<group>"; };
+		1D832BCE232D894B003B1C84 /* ListRepositoriesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesViewControllerTests.swift; sourceTree = "<group>"; };
+		1D832BD3232D8F51003B1C84 /* PullRequestsRepoViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsRepoViewControllerTests.swift; sourceTree = "<group>"; };
+		1DAC11F3232D2E6400F109E1 /* TopJavaRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopJavaRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DAC1200232D2E6400F109E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1DAC1203232D2E6400F109E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1DAC1205232D2E6400F109E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DAC120A232D2E6400F109E1 /* TopJavaRepositoriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopJavaRepositoriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DAC1210232D2E6400F109E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DAC121B232D317900F109E1 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		1DAC121E232D355C00F109E1 /* ListRepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesPresenter.swift; sourceTree = "<group>"; };
+		1DAC121F232D355C00F109E1 /* ListRepositoriesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesWorker.swift; sourceTree = "<group>"; };
+		1DAC1220232D355C00F109E1 /* ListRepositoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesRouter.swift; sourceTree = "<group>"; };
+		1DAC1221232D355C00F109E1 /* ListRepositoriesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesModels.swift; sourceTree = "<group>"; };
+		1DAC1222232D355C00F109E1 /* ListRepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesViewController.swift; sourceTree = "<group>"; };
+		1DAC1223232D355C00F109E1 /* ListRepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesInteractor.swift; sourceTree = "<group>"; };
+		1DAC1224232D355C00F109E1 /* ListRepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListRepositoriesViewController.xib; sourceTree = "<group>"; };
+		1DAC122D232D37BF00F109E1 /* ListRepositoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesCell.swift; sourceTree = "<group>"; };
+		1DAC122E232D37BF00F109E1 /* ListRepositoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListRepositoriesCell.xib; sourceTree = "<group>"; };
+		1DAC1231232D384800F109E1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopJavaRepositoriesProvider.swift; sourceTree = "<group>"; };
+		1DAC1236232D430400F109E1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		1DAC123A232D4F5100F109E1 /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
+		1DAC123F232D50DB00F109E1 /* PullRequestRepoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoPresenter.swift; sourceTree = "<group>"; };
+		1DAC1240232D50DB00F109E1 /* PullRequestRepoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoWorker.swift; sourceTree = "<group>"; };
+		1DAC1241232D50DB00F109E1 /* PullRequestRepoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoRouter.swift; sourceTree = "<group>"; };
+		1DAC1242232D50DB00F109E1 /* PullRequestRepoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoModels.swift; sourceTree = "<group>"; };
+		1DAC1243232D50DB00F109E1 /* PullRequestRepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoViewController.swift; sourceTree = "<group>"; };
+		1DAC1244232D50DB00F109E1 /* PullRequestRepoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoInteractor.swift; sourceTree = "<group>"; };
+		1DAC1245232D50DB00F109E1 /* PullRequestRepoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestRepoViewController.xib; sourceTree = "<group>"; };
+		1DAC124D232D511E00F109E1 /* PullRequestRepoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoProvider.swift; sourceTree = "<group>"; };
+		1DAC1251232D513700F109E1 /* PullRequestRepoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoCell.swift; sourceTree = "<group>"; };
+		1DAC1252232D513700F109E1 /* PullRequestRepoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PullRequestRepoCell.xib; sourceTree = "<group>"; };
+		1DAC1255232D570D00F109E1 /* PullRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequests.swift; sourceTree = "<group>"; };
+		1DAC1257232D676000F109E1 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		1DAC125E232D7C6900F109E1 /* ListRepositoriesPresenterStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesPresenterStub.swift; sourceTree = "<group>"; };
+		1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
+		1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
+		1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TopRatedJavaRepositories.strings; sourceTree = "<group>"; };
+		1DDDF6DA232D2F5100844D17 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		1DDDF6DD232D2F5100844D17 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		1DDDF6DE232D2F5100844D17 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		1DDDF6DF232D2F5100844D17 /* URLRequestProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestProtocol.swift; sourceTree = "<group>"; };
+		1DDDF6E1232D2F5100844D17 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		1DDDF6E2232D2F5100844D17 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		1DDDF6E3232D2F5100844D17 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		1DDDF6E5232D2F5100844D17 /* ViewControllerBaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBaseProtocol.swift; sourceTree = "<group>"; };
+		1DDDF6F5232D2F7C00844D17 /* ENV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ENV.swift; sourceTree = "<group>"; };
+		1E981E644A09F4BF9672AA02 /* Pods_TopJavaRepositories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopJavaRepositories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		363B62861D91B834E441ABC2 /* Pods-TopJavaRepositoriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopJavaRepositoriesTests.release.xcconfig"; path = "Target Support Files/Pods-TopJavaRepositoriesTests/Pods-TopJavaRepositoriesTests.release.xcconfig"; sourceTree = "<group>"; };
+		ABFCB2EFFAA0BCA3516F0F72 /* Pods-TopJavaRepositoriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopJavaRepositoriesTests.debug.xcconfig"; path = "Target Support Files/Pods-TopJavaRepositoriesTests/Pods-TopJavaRepositoriesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1BE3727307749730E79FEF2 /* Pods_TopJavaRepositoriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopJavaRepositoriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1D96041701AE4610610F11F /* Pods-TopJavaRepositories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopJavaRepositories.release.xcconfig"; path = "Target Support Files/Pods-TopJavaRepositories/Pods-TopJavaRepositories.release.xcconfig"; sourceTree = "<group>"; };
+		D90C16CF8A988ECF05CB429A /* Pods-TopJavaRepositories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopJavaRepositories.debug.xcconfig"; path = "Target Support Files/Pods-TopJavaRepositories/Pods-TopJavaRepositories.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DAC11F0232D2E6300F109E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5054116E4EF6C57B62FFF273 /* Pods_TopJavaRepositories.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAC1207232D2E6400F109E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8861BFC264BE1F60A2F63B8A /* Pods_TopJavaRepositoriesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D832BB0232D7E52003B1C84 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				1D832BB1232D7E60003B1C84 /* JsonLoader.swift */,
+				1D832BB3232D7E97003B1C84 /* ReturnTypes.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		1D832BB7232D7F0C003B1C84 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D832BBF232D7FB9003B1C84 /* pullRequests.json */,
+				1D832BBE232D7F9B003B1C84 /* topRepositories.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1D832BC1232D7FE5003B1C84 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1D832BC8232D80D6003B1C84 /* Stubs */,
+				1D832BC9232D80F5003B1C84 /* ListRepositoriesInteractorTest.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1D832BC2232D7FE9003B1C84 /* Pull Requests */ = {
+			isa = PBXGroup;
+			children = (
+				1D832BC7232D80CF003B1C84 /* Stubs */,
+				1D832BCC232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift */,
+			);
+			path = "Pull Requests";
+			sourceTree = "<group>";
+		};
+		1D832BC7232D80CF003B1C84 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				1D832BC3232D800C003B1C84 /* PullRequestRepoPresenterStub.swift */,
+				1D832BC5232D8017003B1C84 /* PullRequestRepoWorkerStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		1D832BC8232D80D6003B1C84 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC125E232D7C6900F109E1 /* ListRepositoriesPresenterStub.swift */,
+				1D832BB5232D7EAE003B1C84 /* ListRepositoriesWorkerStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		1DAC11EA232D2E6300F109E1 = {
+			isa = PBXGroup;
+			children = (
+				1DAC11F5232D2E6400F109E1 /* TopJavaRepositories */,
+				1DAC120D232D2E6400F109E1 /* TopJavaRepositoriesTests */,
+				1DAC11F4232D2E6400F109E1 /* Products */,
+				EF0228BA25A899CB7543902E /* Pods */,
+				5981141B4B3C24BD6B02D52B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DAC11F4232D2E6400F109E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC11F3232D2E6400F109E1 /* TopJavaRepositories.app */,
+				1DAC120A232D2E6400F109E1 /* TopJavaRepositoriesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DAC11F5232D2E6400F109E1 /* TopJavaRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6D2232D2F5100844D17 /* Common */,
+				1DDDF6F9232D2FA700844D17 /* Modules */,
+				1DDDF6F4232D2F6B00844D17 /* Supporting Files */,
+			);
+			path = TopJavaRepositories;
+			sourceTree = "<group>";
+		};
+		1DAC120D232D2E6400F109E1 /* TopJavaRepositoriesTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D832BB0232D7E52003B1C84 /* Util */,
+				1DAC125A232D77CB00F109E1 /* UI Tests */,
+				1DAC1259232D77C000F109E1 /* Unit Tests */,
+				1DAC1210232D2E6400F109E1 /* Info.plist */,
+			);
+			path = TopJavaRepositoriesTests;
+			sourceTree = "<group>";
+		};
+		1DAC121D232D353400F109E1 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC1233232D3BA800F109E1 /* Provider */,
+				1DAC122C232D379F00F109E1 /* Views */,
+				1DAC121F232D355C00F109E1 /* ListRepositoriesWorker.swift */,
+				1DAC1220232D355C00F109E1 /* ListRepositoriesRouter.swift */,
+				1DAC1221232D355C00F109E1 /* ListRepositoriesModels.swift */,
+				1DAC1223232D355C00F109E1 /* ListRepositoriesInteractor.swift */,
+				1DAC121E232D355C00F109E1 /* ListRepositoriesPresenter.swift */,
+				1DAC1222232D355C00F109E1 /* ListRepositoriesViewController.swift */,
+				1DAC1224232D355C00F109E1 /* ListRepositoriesViewController.xib */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		1DAC122C232D379F00F109E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC122D232D37BF00F109E1 /* ListRepositoriesCell.swift */,
+				1DAC122E232D37BF00F109E1 /* ListRepositoriesCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1DAC1233232D3BA800F109E1 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		1DAC1239232D4F2100F109E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC123A232D4F5100F109E1 /* UILabel + Extensions.swift */,
+				1DAC1257232D676000F109E1 /* UITableView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1DAC123C232D50B000F109E1 /* Pull Requests */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC123E232D50BF00F109E1 /* Provider */,
+				1DAC123D232D50BB00F109E1 /* Views */,
+				1DAC1240232D50DB00F109E1 /* PullRequestRepoWorker.swift */,
+				1DAC1241232D50DB00F109E1 /* PullRequestRepoRouter.swift */,
+				1DAC1242232D50DB00F109E1 /* PullRequestRepoModels.swift */,
+				1DAC1244232D50DB00F109E1 /* PullRequestRepoInteractor.swift */,
+				1DAC123F232D50DB00F109E1 /* PullRequestRepoPresenter.swift */,
+				1DAC1243232D50DB00F109E1 /* PullRequestRepoViewController.swift */,
+				1DAC1245232D50DB00F109E1 /* PullRequestRepoViewController.xib */,
+			);
+			path = "Pull Requests";
+			sourceTree = "<group>";
+		};
+		1DAC123D232D50BB00F109E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC1251232D513700F109E1 /* PullRequestRepoCell.swift */,
+				1DAC1252232D513700F109E1 /* PullRequestRepoCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1DAC123E232D50BF00F109E1 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC124D232D511E00F109E1 /* PullRequestRepoProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		1DAC1259232D77C000F109E1 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1D832BC2232D7FE9003B1C84 /* Pull Requests */,
+				1D832BC1232D7FE5003B1C84 /* List */,
+				1D832BB7232D7F0C003B1C84 /* Resources */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		1DAC125A232D77CB00F109E1 /* UI Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1D832BCE232D894B003B1C84 /* ListRepositoriesViewControllerTests.swift */,
+				1D832BD3232D8F51003B1C84 /* PullRequestsRepoViewControllerTests.swift */,
+			);
+			path = "UI Tests";
+			sourceTree = "<group>";
+		};
+		1DDDF6D2232D2F5100844D17 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC1239232D4F2100F109E1 /* Extensions */,
+				1DDDF6D3232D2F5100844D17 /* Configuration */,
+				1DDDF6D7232D2F5100844D17 /* Resources */,
+				1DDDF6DC232D2F5100844D17 /* Network */,
+				1DDDF6E0232D2F5100844D17 /* Models */,
+				1DDDF6E4232D2F5100844D17 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1DDDF6D3232D2F5100844D17 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */,
+				1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		1DDDF6D7232D2F5100844D17 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6DA232D2F5100844D17 /* Font.swift */,
+				1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */,
+				1DAC1231232D384800F109E1 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1DDDF6DC232D2F5100844D17 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6DD232D2F5100844D17 /* NetworkProvider.swift */,
+				1DDDF6DE232D2F5100844D17 /* ServiceError.swift */,
+				1DDDF6DF232D2F5100844D17 /* URLRequestProtocol.swift */,
+				1DAC1236232D430400F109E1 /* Logger.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1DDDF6E0232D2F5100844D17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6E1232D2F5100844D17 /* Repositories.swift */,
+				1DDDF6E2232D2F5100844D17 /* Repository.swift */,
+				1DDDF6E3232D2F5100844D17 /* Owner.swift */,
+				1DAC1255232D570D00F109E1 /* PullRequests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1DDDF6E4232D2F5100844D17 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1DDDF6E5232D2F5100844D17 /* ViewControllerBaseProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1DDDF6F4232D2F6B00844D17 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC121B232D317900F109E1 /* R.generated.swift */,
+				1DAC1205232D2E6400F109E1 /* Info.plist */,
+				1DAC1202232D2E6400F109E1 /* LaunchScreen.storyboard */,
+				1DAC1200232D2E6400F109E1 /* Assets.xcassets */,
+				1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */,
+				1DDDF6F5232D2F7C00844D17 /* ENV.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DDDF6F9232D2FA700844D17 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC123C232D50B000F109E1 /* Pull Requests */,
+				1DAC121D232D353400F109E1 /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5981141B4B3C24BD6B02D52B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E981E644A09F4BF9672AA02 /* Pods_TopJavaRepositories.framework */,
+				B1BE3727307749730E79FEF2 /* Pods_TopJavaRepositoriesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF0228BA25A899CB7543902E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D90C16CF8A988ECF05CB429A /* Pods-TopJavaRepositories.debug.xcconfig */,
+				C1D96041701AE4610610F11F /* Pods-TopJavaRepositories.release.xcconfig */,
+				ABFCB2EFFAA0BCA3516F0F72 /* Pods-TopJavaRepositoriesTests.debug.xcconfig */,
+				363B62861D91B834E441ABC2 /* Pods-TopJavaRepositoriesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DAC11F2232D2E6300F109E1 /* TopJavaRepositories */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DAC1213232D2E6400F109E1 /* Build configuration list for PBXNativeTarget "TopJavaRepositories" */;
+			buildPhases = (
+				6849F695B89288AE7F7AD650 /* [CP] Check Pods Manifest.lock */,
+				1DAC121A232D312100F109E1 /* R Swift */,
+				1DAC11EF232D2E6300F109E1 /* Sources */,
+				1DAC11F0232D2E6300F109E1 /* Frameworks */,
+				1DAC11F1232D2E6300F109E1 /* Resources */,
+				E4F1295C7BB1EFF3E79E07D9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TopJavaRepositories;
+			productName = TopJavaRepositories;
+			productReference = 1DAC11F3232D2E6400F109E1 /* TopJavaRepositories.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DAC1209232D2E6400F109E1 /* TopJavaRepositoriesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DAC1216232D2E6400F109E1 /* Build configuration list for PBXNativeTarget "TopJavaRepositoriesTests" */;
+			buildPhases = (
+				9CD4864F9475AB46ADFA07AA /* [CP] Check Pods Manifest.lock */,
+				1DDDF6FA232D301B00844D17 /* R Swift */,
+				1DAC1206232D2E6400F109E1 /* Sources */,
+				1DAC1207232D2E6400F109E1 /* Frameworks */,
+				1DAC1208232D2E6400F109E1 /* Resources */,
+				1017CC2202CF04127A9FB31C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DAC120C232D2E6400F109E1 /* PBXTargetDependency */,
+			);
+			name = TopJavaRepositoriesTests;
+			productName = TopJavaRepositoriesTests;
+			productReference = 1DAC120A232D2E6400F109E1 /* TopJavaRepositoriesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DAC11EB232D2E6300F109E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = MSC;
+				TargetAttributes = {
+					1DAC11F2232D2E6300F109E1 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					1DAC1209232D2E6400F109E1 = {
+						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
+						TestTargetID = 1DAC11F2232D2E6300F109E1;
+					};
+				};
+			};
+			buildConfigurationList = 1DAC11EE232D2E6300F109E1 /* Build configuration list for PBXProject "TopJavaRepositories" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DAC11EA232D2E6300F109E1;
+			productRefGroup = 1DAC11F4232D2E6400F109E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DAC11F2232D2E6300F109E1 /* TopJavaRepositories */,
+				1DAC1209232D2E6400F109E1 /* TopJavaRepositoriesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DAC11F1232D2E6300F109E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DAC1204232D2E6400F109E1 /* LaunchScreen.storyboard in Resources */,
+				1DAC1230232D37BF00F109E1 /* ListRepositoriesCell.xib in Resources */,
+				1DAC124C232D50DB00F109E1 /* PullRequestRepoViewController.xib in Resources */,
+				1DAC1201232D2E6400F109E1 /* Assets.xcassets in Resources */,
+				1DAC1254232D513700F109E1 /* PullRequestRepoCell.xib in Resources */,
+				1DAC1232232D384800F109E1 /* Colors.xcassets in Resources */,
+				1DDDF6EA232D2F5100844D17 /* TopRatedJavaRepositories.strings in Resources */,
+				1DAC122B232D355C00F109E1 /* ListRepositoriesViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAC1208232D2E6400F109E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D832BC0232D7FB9003B1C84 /* pullRequests.json in Resources */,
+				1D832BCB232D8224003B1C84 /* topRepositories.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1017CC2202CF04127A9FB31C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TopJavaRepositoriesTests/Pods-TopJavaRepositoriesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TopJavaRepositoriesTests/Pods-TopJavaRepositoriesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TopJavaRepositoriesTests/Pods-TopJavaRepositoriesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1DAC121A232D312100F109E1 /* R Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R Swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/TopJavaRepositories/Supporting Files/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/TopJavaRepositories/Supporting Files/R.generated.swift\"\n";
+		};
+		1DDDF6FA232D301B00844D17 /* R Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R Swift";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$SRCROOT/TopRatedJavaRepositories/Supporting Files/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/TopRatedJavaRepositories/Supporting Files/R.generated.swift\"\n";
+		};
+		6849F695B89288AE7F7AD650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TopJavaRepositories-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD4864F9475AB46ADFA07AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TopJavaRepositoriesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F1295C7BB1EFF3E79E07D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TopJavaRepositories/Pods-TopJavaRepositories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TopJavaRepositories/Pods-TopJavaRepositories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TopJavaRepositories/Pods-TopJavaRepositories-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DAC11EF232D2E6300F109E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DDDF6E6232D2F5100844D17 /* ReusableCells.swift in Sources */,
+				1DAC1237232D430400F109E1 /* Logger.swift in Sources */,
+				1DAC1227232D355C00F109E1 /* ListRepositoriesRouter.swift in Sources */,
+				1DAC122F232D37BF00F109E1 /* ListRepositoriesCell.swift in Sources */,
+				1DDDF6E8232D2F5100844D17 /* CommonTypes.swift in Sources */,
+				1DAC1246232D50DB00F109E1 /* PullRequestRepoPresenter.swift in Sources */,
+				1DAC1256232D570D00F109E1 /* PullRequests.swift in Sources */,
+				1DDDF6EF232D2F5100844D17 /* URLRequestProtocol.swift in Sources */,
+				1DAC124E232D511E00F109E1 /* PullRequestRepoProvider.swift in Sources */,
+				1DDDF6EB232D2F5100844D17 /* Font.swift in Sources */,
+				1DDDF6F1232D2F5100844D17 /* Repository.swift in Sources */,
+				1DDDF6EE232D2F5100844D17 /* ServiceError.swift in Sources */,
+				1DDDF6F0232D2F5100844D17 /* Repositories.swift in Sources */,
+				1DAC1247232D50DB00F109E1 /* PullRequestRepoWorker.swift in Sources */,
+				1DDDF6F6232D2F7C00844D17 /* ENV.swift in Sources */,
+				1DAC124B232D50DB00F109E1 /* PullRequestRepoInteractor.swift in Sources */,
+				1DAC121C232D317900F109E1 /* R.generated.swift in Sources */,
+				1DAC11F7232D2E6400F109E1 /* AppDelegate.swift in Sources */,
+				1DAC1258232D676000F109E1 /* UITableView+Extensions.swift in Sources */,
+				1DDDF6F2232D2F5100844D17 /* Owner.swift in Sources */,
+				1DAC1249232D50DB00F109E1 /* PullRequestRepoModels.swift in Sources */,
+				1DAC1229232D355C00F109E1 /* ListRepositoriesViewController.swift in Sources */,
+				1DAC122A232D355C00F109E1 /* ListRepositoriesInteractor.swift in Sources */,
+				1DAC1235232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift in Sources */,
+				1DAC1248232D50DB00F109E1 /* PullRequestRepoRouter.swift in Sources */,
+				1DDDF6F3232D2F5100844D17 /* ViewControllerBaseProtocol.swift in Sources */,
+				1DAC1226232D355C00F109E1 /* ListRepositoriesWorker.swift in Sources */,
+				1DAC1225232D355C00F109E1 /* ListRepositoriesPresenter.swift in Sources */,
+				1DAC123B232D4F5100F109E1 /* UILabel + Extensions.swift in Sources */,
+				1DAC124A232D50DB00F109E1 /* PullRequestRepoViewController.swift in Sources */,
+				1DAC1253232D513700F109E1 /* PullRequestRepoCell.swift in Sources */,
+				1DDDF6ED232D2F5100844D17 /* NetworkProvider.swift in Sources */,
+				1DAC1228232D355C00F109E1 /* ListRepositoriesModels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DAC1206232D2E6400F109E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D832BC6232D8017003B1C84 /* PullRequestRepoWorkerStub.swift in Sources */,
+				1D832BD4232D8F51003B1C84 /* PullRequestsRepoViewControllerTests.swift in Sources */,
+				1D832BB2232D7E60003B1C84 /* JsonLoader.swift in Sources */,
+				1D832BCF232D894B003B1C84 /* ListRepositoriesViewControllerTests.swift in Sources */,
+				1D832BCA232D80F5003B1C84 /* ListRepositoriesInteractorTest.swift in Sources */,
+				1D832BB4232D7E97003B1C84 /* ReturnTypes.swift in Sources */,
+				1D832BB6232D7EAE003B1C84 /* ListRepositoriesWorkerStub.swift in Sources */,
+				1D832BCD232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift in Sources */,
+				1D832BC4232D800C003B1C84 /* PullRequestRepoPresenterStub.swift in Sources */,
+				1DAC125F232D7C6900F109E1 /* ListRepositoriesPresenterStub.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DAC120C232D2E6400F109E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DAC11F2232D2E6300F109E1 /* TopJavaRepositories */;
+			targetProxy = 1DAC120B232D2E6400F109E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DAC1202232D2E6400F109E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DAC1203232D2E6400F109E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DAC1211232D2E6400F109E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DAC1212232D2E6400F109E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DAC1214232D2E6400F109E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90C16CF8A988ECF05CB429A /* Pods-TopJavaRepositories.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59L34GWFDZ;
+				INFOPLIST_FILE = "$(SRCROOT)/TopJavaRepositories/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.msc.TopJavaRepositories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DAC1215232D2E6400F109E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1D96041701AE4610610F11F /* Pods-TopJavaRepositories.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59L34GWFDZ;
+				INFOPLIST_FILE = "$(SRCROOT)/TopJavaRepositories/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.msc.TopJavaRepositories;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1DAC1217232D2E6400F109E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFCB2EFFAA0BCA3516F0F72 /* Pods-TopJavaRepositoriesTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59L34GWFDZ;
+				INFOPLIST_FILE = TopJavaRepositoriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.msc.TopJavaRepositoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopJavaRepositories.app/TopJavaRepositories";
+			};
+			name = Debug;
+		};
+		1DAC1218232D2E6400F109E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 363B62861D91B834E441ABC2 /* Pods-TopJavaRepositoriesTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 59L34GWFDZ;
+				INFOPLIST_FILE = TopJavaRepositoriesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.msc.TopJavaRepositoriesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TopJavaRepositories.app/TopJavaRepositories";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DAC11EE232D2E6300F109E1 /* Build configuration list for PBXProject "TopJavaRepositories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DAC1211232D2E6400F109E1 /* Debug */,
+				1DAC1212232D2E6400F109E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DAC1213232D2E6400F109E1 /* Build configuration list for PBXNativeTarget "TopJavaRepositories" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DAC1214232D2E6400F109E1 /* Debug */,
+				1DAC1215232D2E6400F109E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DAC1216232D2E6400F109E1 /* Build configuration list for PBXNativeTarget "TopJavaRepositoriesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DAC1217232D2E6400F109E1 /* Debug */,
+				1DAC1218232D2E6400F109E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DAC11EB232D2E6300F109E1 /* Project object */;
+}
