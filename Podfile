@@ -8,6 +8,7 @@ target 'TopJavaRepositories' do
   # Pods for TopJavaRepositories
    pod 'R.swift'
    pod 'SDWebImage'
+   pod 'FontAwesome.swift'
   target 'TopJavaRepositoriesTests' do
     inherit! :search_paths
     # Pods for testing

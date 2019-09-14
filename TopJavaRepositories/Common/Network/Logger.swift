@@ -27,7 +27,7 @@ public extension URLRequest {
     /**
      Returns a cURL command representation of this URL request.
      */
-    public var curlString: String {
+    var curlString: String {
         guard let url = url else { return "" }
         var baseCommand = "curl \(url.absoluteString)"
         if httpMethod == "HEAD" {

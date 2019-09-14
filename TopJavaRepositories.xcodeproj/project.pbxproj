@@ -24,6 +24,7 @@
 		1DAC1232232D384800F109E1 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1231232D384800F109E1 /* Colors.xcassets */; };
 		1DAC1235232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */; };
 		1DAC1237232D430400F109E1 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC1236232D430400F109E1 /* Logger.swift */; };
+		1DAC123B232D4F5100F109E1 /* UILabel + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC123A232D4F5100F109E1 /* UILabel + Extensions.swift */; };
 		1DDDF6E6232D2F5100844D17 /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */; };
 		1DDDF6E8232D2F5100844D17 /* CommonTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */; };
 		1DDDF6EA232D2F5100844D17 /* TopRatedJavaRepositories.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */; };
@@ -72,6 +73,7 @@
 		1DAC1231232D384800F109E1 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1DAC1234232D3BC500F109E1 /* TopJavaRepositoriesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopJavaRepositoriesProvider.swift; sourceTree = "<group>"; };
 		1DAC1236232D430400F109E1 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		1DAC123A232D4F5100F109E1 /* UILabel + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extensions.swift"; sourceTree = "<group>"; };
 		1DDDF6D4232D2F5100844D17 /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
 		1DDDF6D6232D2F5100844D17 /* CommonTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonTypes.swift; sourceTree = "<group>"; };
 		1DDDF6D9232D2F5100844D17 /* TopRatedJavaRepositories.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TopRatedJavaRepositories.strings; sourceTree = "<group>"; };
@@ -184,9 +186,18 @@
 			path = Provider;
 			sourceTree = "<group>";
 		};
+		1DAC1239232D4F2100F109E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC123A232D4F5100F109E1 /* UILabel + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		1DDDF6D2232D2F5100844D17 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1DAC1239232D4F2100F109E1 /* Extensions */,
 				1DDDF6D3232D2F5100844D17 /* Configuration */,
 				1DDDF6D7232D2F5100844D17 /* Resources */,
 				1DDDF6DC232D2F5100844D17 /* Network */,
@@ -536,6 +547,7 @@
 				1DDDF6F3232D2F5100844D17 /* ViewControllerBaseProtocol.swift in Sources */,
 				1DAC1226232D355C00F109E1 /* ListRepositoriesWorker.swift in Sources */,
 				1DAC1225232D355C00F109E1 /* ListRepositoriesPresenter.swift in Sources */,
+				1DAC123B232D4F5100F109E1 /* UILabel + Extensions.swift in Sources */,
 				1DDDF6ED232D2F5100844D17 /* NetworkProvider.swift in Sources */,
 				1DAC1228232D355C00F109E1 /* ListRepositoriesModels.swift in Sources */,
 			);

@@ -1,4 +1,5 @@
 PODS:
+  - FontAwesome.swift (1.8.1)
   - iOSSnapshotTestCase (6.1.0):
     - iOSSnapshotTestCase/SwiftSupport (= 6.1.0)
   - iOSSnapshotTestCase/Core (6.1.0)
@@ -19,6 +20,7 @@ PODS:
   - SDWebImage/Core (5.1.0)
 
 DEPENDENCIES:
+  - FontAwesome.swift
   - Nimble
   - Nimble-Snapshots
   - Quick
@@ -27,6 +29,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FontAwesome.swift
     - iOSSnapshotTestCase
     - Nimble
     - Nimble-Snapshots
@@ -36,6 +39,7 @@ SPEC REPOS:
     - SDWebImage
 
 SPEC CHECKSUMS:
+  FontAwesome.swift: 6f55c8ed22a30ab6a8ca94033473161f678dcd4b
   iOSSnapshotTestCase: 30d540b0c8feb9d7f8ff97acc25a3804b48ee264
   Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
   Nimble-Snapshots: 8ec63f41ce6c7229a17be9a64edbc123b181f75b
@@ -44,6 +48,6 @@ SPEC CHECKSUMS:
   R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
   SDWebImage: fb387001955223213dde14bc08c8b73f371f8d8f
 
-PODFILE CHECKSUM: d27c41cff1ef0862d6835b2a411316bb65a3ff94
+PODFILE CHECKSUM: bc45e0b0e86c095ff4d504af91f9affdc0cb3d18
 
 COCOAPODS: 1.7.5

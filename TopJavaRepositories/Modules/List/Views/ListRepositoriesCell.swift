@@ -8,6 +8,7 @@
 
 import UIKit
 import SDWebImage
+import FontAwesome_swift
 
 class ListRepositoriesCell: UITableViewCell, ReusableView, NibLoadableView {
 
@@ -31,12 +32,12 @@ class ListRepositoriesCell: UITableViewCell, ReusableView, NibLoadableView {
     }
     
     func configure(name: String, repoDescription: String, pullRequests: String, stars: String, repoImage: URL?, username: String) {
+
         self.name.text = name
         self.repoDescription.text = repoDescription
-        self.pullRequests.text = pullRequests
-        self.stars.text = stars
         self.username.text = username
         self.repoImage.sd_setImage(with: repoImage, placeholderImage: #imageLiteral(resourceName: "userLogo"))
-    }
-    
+        self.stars.setupIconWithText(text: stars, icon: FontAwesome.star)
+        self.pullRequests.setupIconWithText(text: pullRequests, icon: FontAwesome.codeBranch)
+    }    
 }
