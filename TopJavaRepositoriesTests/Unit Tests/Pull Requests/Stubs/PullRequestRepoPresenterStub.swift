@@ -7,6 +7,7 @@
 //
 
 @testable import TopJavaRepositories
+import Foundation
 
 class PullRequestRepoPresenterStub: PullRequestRepoPresenter {
     var invokedViewControllerSetter = false
@@ -59,7 +60,10 @@ class PullRequestRepoPresenterStub: PullRequestRepoPresenter {
         invokedPresentViewModelFromModelCount += 1
         invokedPresentViewModelFromModelParameters = (pullRequest, ())
         invokedPresentViewModelFromModelParametersList.append((pullRequest, ()))
-        return stubbedPresentViewModelFromModelResult
+        guard let url = URL(string: pullRequest.user.avatarURL) else {
+            return nil
+        }
+        return PullRequestRepo.ViewModel(title: pullRequest.title, body: pullRequest.body, ownerName: pullRequest.user.login, ownerPhotoURL: url)
     }
     var invokedPresentLoading = false
     var invokedPresentLoadingCount = 0

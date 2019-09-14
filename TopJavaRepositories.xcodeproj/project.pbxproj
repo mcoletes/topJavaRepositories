@@ -15,6 +15,7 @@
 		1D832BC6232D8017003B1C84 /* PullRequestRepoWorkerStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BC5232D8017003B1C84 /* PullRequestRepoWorkerStub.swift */; };
 		1D832BCA232D80F5003B1C84 /* ListRepositoriesInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BC9232D80F5003B1C84 /* ListRepositoriesInteractorTest.swift */; };
 		1D832BCB232D8224003B1C84 /* topRepositories.json in Resources */ = {isa = PBXBuildFile; fileRef = 1D832BBE232D7F9B003B1C84 /* topRepositories.json */; };
+		1D832BCD232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D832BCC232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift */; };
 		1DAC11F7232D2E6400F109E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */; };
 		1DAC1201232D2E6400F109E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1200232D2E6400F109E1 /* Assets.xcassets */; };
 		1DAC1204232D2E6400F109E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC1202232D2E6400F109E1 /* LaunchScreen.storyboard */; };
@@ -80,6 +81,7 @@
 		1D832BC3232D800C003B1C84 /* PullRequestRepoPresenterStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoPresenterStub.swift; sourceTree = "<group>"; };
 		1D832BC5232D8017003B1C84 /* PullRequestRepoWorkerStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestRepoWorkerStub.swift; sourceTree = "<group>"; };
 		1D832BC9232D80F5003B1C84 /* ListRepositoriesInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRepositoriesInteractorTest.swift; sourceTree = "<group>"; };
+		1D832BCC232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestsRepoInteractorTests.swift; sourceTree = "<group>"; };
 		1DAC11F3232D2E6400F109E1 /* TopJavaRepositories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopJavaRepositories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DAC11F6232D2E6400F109E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DAC1200232D2E6400F109E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				1D832BC7232D80CF003B1C84 /* Stubs */,
+				1D832BCC232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift */,
 			);
 			path = "Pull Requests";
 			sourceTree = "<group>";
@@ -725,6 +728,7 @@
 				1D832BCA232D80F5003B1C84 /* ListRepositoriesInteractorTest.swift in Sources */,
 				1D832BB4232D7E97003B1C84 /* ReturnTypes.swift in Sources */,
 				1D832BB6232D7EAE003B1C84 /* ListRepositoriesWorkerStub.swift in Sources */,
+				1D832BCD232D847D003B1C84 /* PullRequestsRepoInteractorTests.swift in Sources */,
 				1D832BC4232D800C003B1C84 /* PullRequestRepoPresenterStub.swift in Sources */,
 				1DAC125F232D7C6900F109E1 /* ListRepositoriesPresenterStub.swift in Sources */,
 			);

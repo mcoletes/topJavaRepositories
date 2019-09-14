@@ -38,9 +38,7 @@ class PullRequestRepoInteractor: PullRequestRepoBusinessLogic, PullRequestRepoDa
         self.worker = worker
     }
     func getPullrequests() {
-        guard let owner = owner, let name = name else {
-           return
-        }
+        guard let owner = owner, let name = name else { return }
         presenter?.presentLoading()
         worker.getPullRequests(request: PullRequestRepo.Request(owner: owner, name: name), onSuccess: { (response) in
             self.items.append(contentsOf: response)

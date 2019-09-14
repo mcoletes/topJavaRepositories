@@ -84,7 +84,7 @@ class ListRepositoriesInteractorTest: QuickSpec {
                 expect(interactor.numbeOfRows()).to(equal(30))
             }
             
-            it("didSelectRow") {
+            it("did select a repository to display pull request") {
                 worker.returnTypes = .success
                 interactor.fetchRepositories()
                 
